@@ -1,0 +1,59 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/panel.css">
+</head>
+<body>
+<div id="container">
+    <div id="player-info-panel">
+        <div id="player-name">Company Name</div>
+        <div id="resources">
+            <div class="resource" id="player-wood">
+                <div class="resource cur-res" id="cur-wood"></div>
+                <img class="res-image" src="/assets/wood.png">
+                <div class="res-text" id="text-wood"></div>
+                <div class="res-timer" id="timer-wood">0:00:00</div>
+            </div>
+            <div class="resource" id="player-food">
+                <div class="resource cur-res" id="cur-food"></div>
+                <img class="res-image" src="/assets/food.png">
+                <div class="res-text" id="text-food"></div>
+                <div class="res-timer" id="timer-food">0:00:00</div>
+            </div>
+            <div class="resource" id="player-iron">
+                <div class="resource cur-res" id="cur-iron"></div>
+                <img class="res-image" src="/assets/iron.png">
+                <div class="res-text" id="text-iron"></div>
+                <div class="res-timer" id="timer-iron">0:00:00</div>
+            </div>
+            <div class="resource" id="player-stone">
+                <div class="resource cur-res" id="cur-stone"></div>
+                <img class="res-image" src="/assets/stone.png">
+                <div class="res-text" id="text-stone"></div>
+                <div class="res-timer" id="timer-stone">0:00:00</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab-panel">
+        <div id="tab-button-group">
+            <a class="btn tab-btn active-btn" id="quest-log-btn">Quest Logs</a>
+        </div>
+        
+        <div id="quest-log-panel">
+            <div id="quest-log"></div>
+            <a class="btn copy-btn" id="copy-quest-log-btn" data-clipboard-target="#quest-log">Copy to Clipboard</a>
+            <a class="btn danger-btn" id="clear-quest-log-btn">Clear</a>
+        </div>
+    </div>    
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="employeeList.js"></script>
+<script src="lib/amf.js"></script>
+<script src="lib/clipboard.min.js"></script>
+<script src="lib/KTAmfParser.js"></script>
+<script src="lib/KTNetworkHandler.js"></script>
+<script src="lib/KanpaniTools.js"></script>
+<script src="panel.js"></script>
+
+</body>
+</html>

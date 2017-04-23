@@ -1,0 +1,1 @@
+chrome.devtools.panels.create("KanpaniTools", "icon.png", "panel.html");

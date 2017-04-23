@@ -1,0 +1,169 @@
+div#container {
+    position: relative;
+    height: 590px;
+    width: 360px;
+    background-color: #ffffcc;
+    border-radius: 5px;
+    border-color: #a8a800;
+    border-width: 3px;
+    border-style: solid;
+}
+
+#player-info-panel {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+}
+
+#player-name {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 16px;
+    color: #189292;
+    font-weight: bold;
+}
+
+#resources {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    height: 70px;
+    width: 230px;
+}
+
+.resource {
+    position: relative;
+    width: 110px;
+    height: 20px;
+    background-color: #424242;
+    border-radius: 5px;
+}
+
+.cur-res {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #189292;
+}
+
+.res-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.res-image {
+    position: absolute;
+    top: 0px;
+    left: -10px;
+}
+
+.res-timer {
+    position: absolute;;
+    bottom: -15px;
+    right: 0px;
+    font-size: 12px
+}
+
+#player-wood {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#player-food {
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+
+#player-stone {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+}
+
+#player-iron {
+    position: absolute;
+    top: 35px;
+    left: 120px;
+}
+
+#tab-panel {
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+}
+
+#tab-button-group {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 20px;
+    width: 100%;    
+}
+
+#quest-log-panel {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    bottom: 0px;
+}
+
+#quest-log {
+    position: absolute;
+    width: 100%;
+    top:0px;
+    bottom: 30px;
+    background-color: #ddd;
+    overflow-y: scroll;   
+}
+
+.btn {
+    background-color: #17914c;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 2px 6px 2px 6px;
+    color: #eee;
+}
+
+.tab-btn {
+    position: absolute;
+    bottom: 0px;
+    border-radius: 3px 3px 0px 0px;
+    background-color: #a3a3a3;
+    color: #000;
+}
+
+.active-btn {
+    background-color: #146191;
+    color: #eee;
+}
+
+.danger-btn {
+    background-color: #911625;
+    color: #eee;
+}
+
+#copy-quest-log-btn {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 14px;
+}
+
+#clear-quest-log-btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 14px;
+}
