@@ -1,3 +1,10 @@
+function openGoogleTranslate(text) {
+  text = text.trim();
+  if (text.length > 0) {
+    window.open('https://translate.google.com/#ja/en/' + text);
+  }
+}
+
 $(document).ready(function() {
   KTNetworkHandler.init();
 
@@ -14,5 +21,34 @@ $(document).ready(function() {
 
   $('#clear-quest-log-btn').click(function() {
     $('#quest-log').text('');
+  });
+
+  $('#translate-btn').click(function() {
+    var text = $('#quest-log').text();
+    if (text[0] == '|') text = text.substring(1);
+    text = text.split('|').join('%0D');
+    
+    const SCENE_SEPARATOR = '=========End of Scene=========';
+    var scenes = text.split(SCENE_SEPARATOR);
+    var stack = [];
+    var length = 0;
+
+    for(var i=0;i<scenes.length;i++) {
+      if (length + scenes[i].length > 4500) {
+        if (stack.length == 0) {
+          openGoogleTranslate(scenes[i]);
+        } else {
+          openGoogleTranslate(stack.join(SCENE_SEPARATOR));
+          stack = [];
+          length = 0;
+        }
+      } else {
+        stack.push(scenes[i]);
+        length += scenes[i].length;
+      }
+    }
+    if (stack.length > 0) {
+      openGoogleTranslate(stack.join(SCENE_SEPARATOR));
+    }
   });
 });

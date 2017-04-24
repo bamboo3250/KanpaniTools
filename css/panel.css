@@ -154,16 +154,27 @@ div#container {
     color: #eee;
 }
 
-#copy-quest-log-btn {
+#quest-log-btn-group {
     position: absolute;
     bottom: 0px;
-    left: 0px;
+    width: 100%;
+}
+
+#copy-quest-log-btn {
+    float: left;
     font-size: 14px;
+    margin: 0px 2px;
+}
+
+#translate-btn {
+    float: left;
+    font-size: 14px;
+    background-color: #146191;
+    margin: 0px 2px;
 }
 
 #clear-quest-log-btn {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+    float: right;
     font-size: 14px;
+    margin: 0px 2px;
 }
