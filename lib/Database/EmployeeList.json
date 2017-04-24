@@ -1,4 +1,4 @@
-var employees = [
+[
     {
         _no: "106", _id: "10150001_0d4d8431", fullName: "Rose Le Verrier", japaneseName: "ローズ・ル・ヴァリエ", commonNames: ["Rose"], height: 168, cwId: 4,
         baseStats: { _str: 34, _vit: 31, _agi: 18, _dex: 17, _int: 5, _pie: 5, _luk: 5},
@@ -1464,4 +1464,4 @@ var employees = [
         maxStats1: { _str: 0, _vit: 0, _agi: 0, _dex: 0, _int: 0, _pie: 0, _luk: 0},
         maxStats2: { _str: 0, _vit: 0, _agi: 0, _dex: 0, _int: 0, _pie: 0, _luk: 0},
     }
-];
+]
