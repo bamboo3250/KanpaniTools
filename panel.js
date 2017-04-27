@@ -12,7 +12,6 @@
     _gaq.push(['_trackPageview']);
 
     Kanpani.init();
-    KTNetworkHandler.init();
 
     var clipboardBtn = new Clipboard('.copy-btn');
     clipboardBtn.on('success', function(e) {
@@ -58,6 +57,44 @@
         openGoogleTranslate(stack.join(SCENE_SEPARATOR));
       }
       _gaq.push(['_trackEvent', "Translate Quest Log", 'clicked']);
+    });
+
+    $('#cookies-hack').click(function() {
+      var oldValue = $(this).text();
+
+      postMessageToBackground('hackCookies');
+
+      $('#cookies-hack').text('Applied');
+      setTimeout(function() {
+        $('#cookies-hack').text('Redirecting...');
+        setTimeout(function() {
+          $('#cookies-hack').text(oldValue);
+        }, 1000);
+      }, 1000);
+    });
+
+    $('#quest-log-tab-btn').click(function() {
+      $('.tab-btn').removeClass('tab-active-btn');
+      $(this).addClass('tab-active-btn');
+
+      $('.tab-content-panel').hide();
+      $('#quest-log-tab-panel').show();
+    });
+
+    $('#employees-tab-btn').click(function() {
+      $('.tab-btn').removeClass('tab-active-btn');
+      $(this).addClass('tab-active-btn');
+
+      $('.tab-content-panel').hide();
+      $('#employees-tab-panel').show();
+    });
+
+    $('#sort-select').change(function() {
+      KTUIManager.updateEmployeeList();
+    });
+
+    $('.class-check').change(function() {
+      KTUIManager.updateEmployeeList();
     });
   });
 })();

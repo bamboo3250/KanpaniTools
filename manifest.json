@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "KanpaniTools",
-  "description": "Kanpani Girl Game Helper",
-  "version": "0.1.0",
+  "description": "Kanpani Girls Helper",
+  "version": "0.2.0",
 
   "devtools_page": "devtools.html",
   
@@ -12,26 +12,17 @@
   
   "background": {
     "scripts": [
-      "lib/amf.js",
-      "lib/clipboard.min.js",
-      "lib/global.js",
-      "lib/jquery.min.js",
-      
-      "lib/KanpaniTools.js",
-      "lib/KTAmfParser.js",
-      "lib/KTNetworkHandler.js",
-
-      "lib/Managers/KTCharacterManager.js",
-      "lib/Managers/KTPlayerManager.js",
-      "lib/Managers/KTUIManager.js"
+      "lib/background.js"
     ]
   },
   "permissions": [
-    "unlimitedStorage",
     "storage",
+    "unlimitedStorage",
+    "cookies",
     "tabs",
     "http://*/*",
-    "https://*/*"
+    "https://*/*",
+    "http://67.205.150.236/"
   ],
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
 }

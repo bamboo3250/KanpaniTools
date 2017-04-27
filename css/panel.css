@@ -1,12 +1,9 @@
-div#container {
+#container {
     position: relative;
     height: 590px;
     width: 360px;
+    background-image: url("../assets/background.jpg");
     background-color: #ffffcc;
-    border-radius: 5px;
-    border-color: #a8a800;
-    border-width: 3px;
-    border-style: solid;
 }
 
 #player-info-panel {
@@ -23,6 +20,13 @@ div#container {
     font-size: 16px;
     color: #189292;
     font-weight: bold;
+}
+
+#cookies-hack-container {
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    font-size: 14px;
 }
 
 #resources {
@@ -107,25 +111,30 @@ div#container {
 #tab-button-group {
     position: absolute;
     top: 0px;
-    bottom: 0px;
-    height: 20px;
-    width: 100%;    
+    left: 5px;
+    right: 5px;
 }
 
-#quest-log-panel {
+.tab-content-panel {
     position: absolute;
-    top: 20px;
+    top: 18px;
     width: 100%;
     bottom: 0px;
+    background-color: rgba(120,120,120,0.8);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #888;
 }
 
 #quest-log {
     position: absolute;
-    width: 100%;
     top:0px;
+    left: 0px;
+    right: 0px;
     bottom: 30px;
-    background-color: #ddd;
-    overflow-y: scroll;   
+    background-color: #eee;
+    overflow-y: scroll;
+    margin: 5px;
+    border-radius: 3px;
 }
 
 .btn {
@@ -134,19 +143,18 @@ div#container {
     cursor: pointer;
     padding: 2px 6px 2px 6px;
     color: #eee;
+    box-shadow: 1px 1px 1px #888;
 }
 
 .tab-btn {
-    position: absolute;
-    bottom: 0px;
     border-radius: 3px 3px 0px 0px;
     background-color: #a3a3a3;
-    color: #000;
+    color: #ccc;
 }
 
-.active-btn {
-    background-color: #146191;
-    color: #eee;
+.tab-active-btn {
+    background-color: #ddd;
+    color: #000;
 }
 
 .danger-btn {
@@ -156,8 +164,10 @@ div#container {
 
 #quest-log-btn-group {
     position: absolute;
+    margin: 5px;
     bottom: 0px;
-    width: 100%;
+    left: 0px;
+    right: 0px;
 }
 
 #copy-quest-log-btn {
@@ -177,4 +187,139 @@ div#container {
     float: right;
     font-size: 14px;
     margin: 0px 2px;
+}
+
+#employee-filter {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+}
+
+#sort-btn-group {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+#class-btn-group {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+#fighter-filter-btn {
+    background-color: #fe3e3e;
+}
+
+#ronin-filter-btn {
+    background-color: #d33b87;
+}
+
+#archer-filter-btn {
+    background-color: #0f9727;
+}
+
+#soldier-filter-btn {
+    background-color: #158bff;
+}
+
+#warrior-filter-btn {
+    background-color: #464646;
+}
+
+#cleric-filter-btn {
+    background-color: #00b8ae;
+}
+
+#rogue-filter-btn {
+    background-color: #7f1a20;
+}
+
+#mage-filter-btn {
+    background-color: #7600c3;
+}
+
+#employee-list {
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.employee-panel {
+    position: relative;
+    background-color: rgba(117, 212, 249, 0.3);
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 48px;
+    width: 320;
+    margin: 2px 5px;
+}
+
+.employee-thumbnail {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.class-thumbnail {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.employee-name {
+    position: absolute;
+    top: 2px;
+    left: 44px;
+    font-size: 16px;
+}
+
+.promo-thumbnail {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.employee-level {
+    position: absolute;
+    bottom: 0px;
+    left: 44px;
+    font-size: 14px;
+}
+
+.employee-policy {
+    position: absolute;
+    bottom: 0px;
+    right: 130px;
+    font-size: 14px;
+    font-style: italic;
+    color: #00a;
+}
+
+.weapon-thumbnail {
+    position: absolute;
+    top: 4px;
+    right: 86px;
+}
+
+.armor-thumbnail {
+    position: absolute;
+    top: 4px;
+    right: 44px;
+}
+
+.accessory-thumbnail {
+    position: absolute;
+    top: 4px;
+    right: 2px;
 }
