@@ -217,6 +217,18 @@
         "maxStats0": { "_str": 188, "_vit": 154, "_agi": 281, "_dex": 279, "_int": 533, "_pie": 261, "_luk": 221},
         "maxStats1": { "_str": 269, "_vit": 223, "_agi": 404, "_dex": 403, "_int": 706, "_pie": 365, "_luk": 315},
         "maxStats2": { "_str": 375, "_vit": 300, "_agi": 563, "_dex": 562, "_int": 1000, "_pie": 505, "_luk": 430}
+    },{
+        "_no": "???", "_id": "10850006_d69e8942", "fullName": "Illyasviel von Einzbernn", "japaneseName": "イリヤスフィール・フォン・アインツベルン", "commonNames": ["Illya", "Illyasviel"], "height": 0, "cwId": 23,
+        "baseStats": { "_str": 5, "_vit": 5, "_agi": 23, "_dex": 22, "_int": 42, "_pie": 12, "_luk": 6},
+        "maxStats0": { "_str": 156, "_vit": 154, "_agi": 291, "_dex": 281, "_int": 523, "_pie": 263, "_luk": 228},
+        "maxStats1": { "_str": 224, "_vit": 223, "_agi": 409, "_dex": 404, "_int": 701, "_pie": 366, "_luk": 318},
+        "maxStats2": { "_str": 314, "_vit": 304, "_agi": 566, "_dex": 559, "_int": 980, "_pie": 527, "_luk": 438}
+    },{
+        "_no": "???", "_id": "10850007_49440adc", "fullName": "Miyu Edelfelt", "japaneseName": "美遊・エーデルフェルト", "commonNames": ["Miyu"], "height": 0, "cwId": 24,
+        "baseStats": { "_str": 8, "_vit": 5, "_agi": 22, "_dex": 20, "_int": 44, "_pie": 12, "_luk": 7},
+        "maxStats0": { "_str": 188, "_vit": 154, "_agi": 281, "_dex": 279, "_int": 533, "_pie": 261, "_luk": 221},
+        "maxStats1": { "_str": 269, "_vit": 223, "_agi": 404, "_dex": 403, "_int": 706, "_pie": 365, "_luk": 315},
+        "maxStats2": { "_str": 375, "_vit": 300, "_agi": 563, "_dex": 562, "_int": 1000, "_pie": 505, "_luk": 430}
     },
 
     {
@@ -345,6 +357,12 @@
         "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
     },{
         "_no": "218", "_id": "10340007_4bb15a96", "fullName": "Denisa Drexler", "japaneseName": "デニサ・ドレクスレル", "commonNames": ["Denisa"], "height": 0, "cwId": 0,
+        "baseStats": { "_str": 6, "_vit": 6, "_agi": 24, "_dex": 30, "_int": 6, "_pie": 3, "_luk": 5},
+        "maxStats0": { "_str": 162, "_vit": 209, "_agi": 388, "_dex": 460, "_int": 159, "_pie": 160, "_luk": 174},
+        "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
+        "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
+    },{
+        "_no": "???", "_id": "10340008_07a4d5b8", "fullName": "Chloe von Einzbern", "japaneseName": "クロエ・フォン・アインツベルン", "commonNames": ["Kuro"], "height": 0, "cwId": 23,
         "baseStats": { "_str": 6, "_vit": 6, "_agi": 24, "_dex": 30, "_int": 6, "_pie": 3, "_luk": 5},
         "maxStats0": { "_str": 162, "_vit": 209, "_agi": 388, "_dex": 460, "_int": 159, "_pie": 160, "_luk": 174},
         "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},

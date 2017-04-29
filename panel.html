@@ -38,6 +38,7 @@
     <div id="tab-panel">
         <div id="tab-button-group">
             <a class="btn tab-btn tab-active-btn" id="employees-tab-btn">Employees</a>
+            <a class="btn tab-btn" id="teams-tab-btn">Teams</a>
             <a class="btn tab-btn" id="quest-log-tab-btn">Quest Logs</a>
         </div>
         
@@ -47,7 +48,9 @@
                     Sort By 
                     <select id="sort-select">
                         <option value="highest-rarity" selected>Highest Rarity</option>
+                        <option value="lowest-rarity">Lowest Rarity</option>
                         <option value="highest-level">Highest Level</option>
+                        <option value="lowest-level">Lowest Level</option>
                     </select>
                 </div>
                 <div id="class-btn-group">
@@ -73,9 +76,263 @@
                 <img src="assets/item_holder.png" class="armor-thumbnail">
                 <img src="assets/item_holder.png" class="accessory-thumbnail">
             </div>
-            
         </div>
         
+        <div class="tab-content-panel" id="teams-tab-panel" hidden>
+            <div class="team-panel" id="team-panel-0">
+                <div class="team-name">Team 1</div>
+                <div class="team-container">
+                    <div class="team-slot team-slot-0">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-1">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-2">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-3">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-4">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-5">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                </div>
+                <div class="team-policy"></div>
+            </div>
+            <div class="team-panel" id="team-panel-1">
+                <div class="team-name">Team 2</div>
+                <div class="team-container">
+                    <div class="team-slot team-slot-0">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-1">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-2">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-3">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-4">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-5">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                </div>
+                <div class="team-policy"></div>
+            </div>
+            <div class="team-panel" id="team-panel-2">
+                <div class="team-name">Team 3</div>
+                <div class="team-container">
+                    <div class="team-slot team-slot-0">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-1">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-2">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-3">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-4">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-5">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                </div>
+                <div class="team-policy"></div>
+            </div>
+            <div class="team-panel" id="team-panel-3">
+                <div class="team-name">Team 4</div>
+                <div class="team-container">
+                    <div class="team-slot team-slot-0">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-1">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-2">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-3">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-4">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-5">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                </div>
+                <div class="team-policy"></div>
+            </div>
+            <div class="team-panel" id="team-panel-4">
+                <div class="team-name">Team 5</div>
+                <div class="team-container">
+                    <div class="team-slot team-slot-0">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-1">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-2">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-3">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-4">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-5">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                </div>
+                <div class="team-policy"></div>
+            </div>
+            <div class="team-panel" id="team-panel-5">
+                <div class="team-name">Team 6</div>
+                <div class="team-container">
+                    <div class="team-slot team-slot-0">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-1">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-2">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-3">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-4">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                    <div class="team-slot team-slot-5">
+                        <img src="" class="team-employee-thumbnail">
+                        <img src="" class="team-class-thumbnail">
+                        <img src="" class="team-promo-thumbnail">
+                        <img src="" class="team-leader-thumbnail">
+                    </div>
+                </div>
+                <div class="team-policy"></div>
+            </div>
+        </div>
+
         <div class="tab-content-panel" id="quest-log-tab-panel" hidden>
             <div id="quest-log"></div>
             <div id="quest-log-btn-group">

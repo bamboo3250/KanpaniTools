@@ -120,7 +120,7 @@
     top: 18px;
     width: 100%;
     bottom: 0px;
-    background-color: rgba(120,120,120,0.8);
+    background-color: rgba(220,220,220,0.8);
     border-radius: 5px;
     box-shadow: 1px 1px 1px #888;
 }
@@ -322,4 +322,149 @@
     position: absolute;
     top: 4px;
     right: 2px;
+}
+
+.team-panel {
+    height: 145px;
+    width: 141px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 1px 1px 1px #888;
+}
+
+#team-panel-0 {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+#team-panel-1 {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+#team-panel-2 {
+    position: absolute;
+    top: 170px;
+    left: 25px;
+}
+
+#team-panel-3 {
+    position: absolute;
+    top: 170px;
+    right: 25px;
+}
+
+#team-panel-4 {
+    position: absolute;
+    top: 325px;
+    left: 25px;
+}
+
+#team-panel-5 {
+    position: absolute;
+    top: 325px;
+    right: 25px;
+}
+
+.team-name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(24, 146, 146,0.6);
+    font-size: 14px;
+    color: #000;
+    border-radius: 5px 5px 0px 0px;
+    color: #eee;
+}
+
+.team-container {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.team-policy {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 20px;
+    background-color: rgba(24, 146, 146,0.6);
+    text-align: center;
+    font-size: 14px;
+    color: #eee;
+    font-style: italic;
+
+}
+
+.team-slot {
+    width: 40px;
+    height: 44px;
+}
+
+.team-slot-0 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.team-slot-1 {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+}
+
+.team-slot-2 {
+    position: absolute;
+    top: 5px;
+    left: 95px;
+}
+
+.team-slot-3 {
+    position: absolute;
+    top: 54px;
+    left: 5px;
+}
+
+.team-slot-4 {
+    position: absolute;
+    top: 54px;
+    left: 50px;
+}
+
+.team-slot-5 {
+    position: absolute;
+    top: 54px;
+    left: 95px;
+}
+
+.team-employee-thumbnail {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.team-class-thumbnail {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.team-promo-thumbnail {
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+}
+
+.team-leader-thumbnail {
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }

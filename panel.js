@@ -89,6 +89,14 @@
       $('#employees-tab-panel').show();
     });
 
+    $('#teams-tab-btn').click(function() {
+      $('.tab-btn').removeClass('tab-active-btn');
+      $(this).addClass('tab-active-btn');
+
+      $('.tab-content-panel').hide();
+      $('#teams-tab-panel').show();
+    })
+
     $('#sort-select').change(function() {
       KTUIManager.updateEmployeeList();
     });
