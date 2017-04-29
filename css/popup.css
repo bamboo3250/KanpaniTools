@@ -1,0 +1,72 @@
+/* GLOBAL
+--------------------------*/
+body {
+    background:#f9f9f9;
+}
+.wrapper {
+    width:240px;
+    height:262px;
+    overflow:hidden;
+}
+.separator {
+    width:240px;
+    margin:5px auto;
+    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #fff;
+}
+
+/* MENU
+--------------------------*/
+.menu {
+    width:240px;
+    height:63px;
+    padding:5px;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #e5e5e5;
+    cursor: pointer;
+}
+.menu:hover {
+    background:#e5effa;
+}
+.menu .icon {
+    width:60px;
+    height:60px;
+    margin:0px 5px 0px 0px;
+    float:left;
+}
+.menu .icon img {
+    width:60px;
+    height:60px;
+}
+.menu .text {
+    width:165px;
+    height:20px;
+    overflow:hidden;
+    line-height:20px;
+    font-size:14px;
+    font-weight:bold;
+    float:left;
+}
+.menu .desc {
+    width:165px;
+    height:30px;
+    overflow:hidden;
+    line-height:15px;
+    font-size:11px;
+    float:left;
+    color:#999;
+}
+
+/* FOOTER DATA
+--------------------------*/
+.footData {
+    width:240px;
+    height:20px;
+    line-height:18px;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #e5e5e5;
+    font-size:12px;
+    padding:0px 0px 0px 5px;
+    word-break: break-all;
+    overflow: hidden;
+}
