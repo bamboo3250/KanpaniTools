@@ -218,7 +218,7 @@
         "maxStats1": { "_str": 269, "_vit": 223, "_agi": 404, "_dex": 403, "_int": 706, "_pie": 365, "_luk": 315},
         "maxStats2": { "_str": 375, "_vit": 300, "_agi": 563, "_dex": 562, "_int": 1000, "_pie": 505, "_luk": 430}
     },{
-        "_no": "???", "_id": "10850006_d69e8942", "fullName": "Illyasviel von Einzbernn", "japaneseName": "イリヤスフィール・フォン・アインツベルン", "commonNames": ["Illya", "Illyasviel"], "height": 0, "cwId": 23,
+        "_no": "???", "_id": "10850006_d69e8942", "fullName": "Illyasviel von Einzbern", "japaneseName": "イリヤスフィール・フォン・アインツベルン", "commonNames": ["Illya", "Illyasviel"], "height": 0, "cwId": 23,
         "baseStats": { "_str": 5, "_vit": 5, "_agi": 23, "_dex": 22, "_int": 42, "_pie": 12, "_luk": 6},
         "maxStats0": { "_str": 156, "_vit": 154, "_agi": 291, "_dex": 281, "_int": 523, "_pie": 263, "_luk": 228},
         "maxStats1": { "_str": 224, "_vit": 223, "_agi": 409, "_dex": 404, "_int": 701, "_pie": 366, "_luk": 318},
