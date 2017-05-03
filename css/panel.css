@@ -198,11 +198,18 @@
 
 #sort-btn-group {
     position: absolute;
-    top: 0px;
-    width: 100%;
+    top: 6px;
+    left: 6px;
     height: 30px;
-    text-align: center;
-    padding-top: 6px;
+    text-align: left;
+}
+
+#expand-collapse-group {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    height: 30px;
+    text-align: right;
 }
 
 #class-btn-group {
@@ -255,14 +262,28 @@
 
 .employee-panel {
     position: relative;
-    background-color: rgba(117, 212, 249, 0.3);
+    background-color: rgba(117, 212, 249, 0.2);
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+.employee-panel:hover {
+    background-color: rgba(0, 139, 193, 0.2);
+}
+
+.employee-general {
+    position: relative;
     height: 48px;
     width: 320;
-    margin: 2px 5px;
+}
+
+.employee-details {
+    position: relative;
+    width: 320px;
 }
 
 .employee-thumbnail {
@@ -322,6 +343,41 @@
     position: absolute;
     top: 4px;
     right: 2px;
+}
+
+.stats-icon {
+    height: 15px;
+    width: 15px;
+}
+
+.stats-table {
+    color: #a5611d;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.stats-table td {
+    padding-left: 3px;
+}
+
+.stats-value {
+    color: #222;
+}
+
+.hidden-stats {
+    color: #1d61a5;
+}
+
+.skill-table {
+    font-size: 12px;
+    color: #222;
+    width: 100%;
+    text-align: left;
+}
+
+.skill-table th {
+    font-size: 14px;
 }
 
 .team-panel {
@@ -467,4 +523,57 @@
     position: absolute;
     top: 0px;
     right: 0px;
+}
+
+#overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#overlay-panel {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f7f6d2;
+    width: 250px;
+    height: 180px;
+}
+
+#overlay-panel-title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    padding: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#overlay-panel-content {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    padding: 10px 5px 5px 5px;
+}
+
+#overlay-panel-buttons {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    padding: 2px;
+    text-align: center;
 }

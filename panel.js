@@ -9,7 +9,7 @@
   }
 
   $(document).ready(function() {
-    _gaq.push(['_trackPageview']);
+    if (!Kanpani.DEBUG) _gaq.push(['_trackPageview']);  
 
     Kanpani.init();
 
@@ -20,13 +20,13 @@
       setTimeout(function() {
         $('#copy-quest-log-btn').text(oldValue);
       }, 1000);
-      _gaq.push(['_trackEvent', "Copy Quest Log", 'clicked']);
+      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Copy Quest Log", 'clicked']);
       e.clearSelection();
     });
 
     $('#clear-quest-log-btn').click(function() {
       $('#quest-log').text('');
-      _gaq.push(['_trackEvent', "Clear Quest Log", 'clicked']);
+      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Clear Quest Log", 'clicked']);
     });
 
     $('#translate-btn').click(function() {
@@ -56,7 +56,7 @@
       if (stack.length > 0) {
         openGoogleTranslate(stack.join(SCENE_SEPARATOR));
       }
-      _gaq.push(['_trackEvent', "Translate Quest Log", 'clicked']);
+      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Translate Quest Log", 'clicked']);
     });
 
     $('#cookies-hack').click(function() {
@@ -103,6 +103,36 @@
 
     $('.class-check').change(function() {
       KTUIManager.updateEmployeeList();
+    });
+
+    $('#expand-btn').click(function() {
+      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Expand All", 'clicked']);
+      $('.employee-details').show();
+    });
+
+    $('#collapse-btn').click(function() {
+      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Collapse All", 'clicked']);
+      $('.employee-details').hide();
+    });
+
+    function hideOverlay() {
+      $('#overlay').animate({
+        opacity: 0.0
+      }, 100, function() {
+        $('#overlay').hide();
+      });
+    }
+
+    $('#overlay').click(function() {
+      hideOverlay();
+    });
+
+    $('#overlay-panel').click(function(e) {
+      e.stopPropagation();
+    });
+
+    $('#overlay-panel-close-btn').click(function() {
+      hideOverlay();
     });
   });
 })();

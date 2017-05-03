@@ -53,6 +53,10 @@
                         <option value="lowest-level">Lowest Level</option>
                     </select>
                 </div>
+                <div id="expand-collapse-group">
+                    <a class="btn" id="expand-btn">Expand All</a>
+                    <a class="btn" id="collapse-btn">Collapse All</a>
+                </div>
                 <div id="class-btn-group">
                     <input class="class-check" id="fighter-check" type="checkbox" checked>Ftr
                     <input class="class-check" id="ronin-check" type="checkbox" checked>Ron
@@ -66,15 +70,56 @@
             </div>
             <div id="employee-list">It's empty here!<br>Please go to Employees page in your game.</div>
             <div class="employee-panel" id="employee-template" hidden>
-                <img src="" class="employee-thumbnail">
-                <img src="" class="class-thumbnail">
-                <div class="employee-name"></div>
-                <img src="" class="promo-thumbnail">
-                <div class="employee-level"></div>
-                <div class="employee-policy"></div>
-                <img src="assets/item_holder.png" class="weapon-thumbnail">
-                <img src="assets/item_holder.png" class="armor-thumbnail">
-                <img src="assets/item_holder.png" class="accessory-thumbnail">
+                <div class="employee-general">
+                    <img src="" class="employee-thumbnail">
+                    <img src="" class="class-thumbnail">
+                    <div class="employee-name"></div>
+                    <img src="" class="promo-thumbnail">
+                    <div class="employee-level"></div>
+                    <div class="employee-policy"></div>
+                    <img src="assets/item_holder.png" class="weapon-thumbnail">
+                    <img src="assets/item_holder.png" class="armor-thumbnail">
+                    <img src="assets/item_holder.png" class="accessory-thumbnail">
+                </div>
+                <div class="employee-details" hidden>
+                    <table class="stats-table">
+                        <tr>
+                            <td colspan="2"><img class="stats-icon" src="assets/hp.png"> <span class="stats-value employee-hp">0</span></td>
+                            <td>STR <span class="stats-value employee-str">0</span></td>
+                            <td>INT <span class="stats-value employee-int">0</span></td>
+                            <td>AGI <span class="stats-value employee-agi">0</span></td>
+                            <td>LUK <span class="stats-value employee-luk">0</span></td>
+                        </tr>
+                        <tr>
+                            <td><img class="stats-icon" src="assets/patk.png"> <span class="stats-value employee-patk">0</span></td>
+                            <td><img class="stats-icon" src="assets/matk.png"> <span class="stats-value employee-matk">0</span></td>
+                            <td>VIT <span class="stats-value employee-vit">0</span></td>
+                            <td>PIE <span class="stats-value employee-pie">0</span></td>
+                            <td>DEX <span class="stats-value employee-dex">0</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><img class="stats-icon" src="assets/pdef.png"> <span class="stats-value employee-pdef">0</span></td>
+                            <td><img class="stats-icon" src="assets/mdef.png"> <span class="stats-value employee-mdef">0</span></td>
+                            <td class="hidden-stats">ACC <span class="stats-value employee-hit">0</span></td>
+                            <td class="hidden-stats">CRIT <span class="stats-value employee-crit">0</span></td>
+                            <td class="hidden-stats">EVA <span class="stats-value employee-eva">0</span></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table class="skill-table">
+                        <tr class="front-skill">
+                            <th>Front</th>
+                            <td class="skill-name">Front Skill's name</td>
+                            <td class="skill-details"><font color="#c00"><i>Re-equip weapon</i></font></td>
+                        </tr>
+                        <tr class="back-skill">
+                            <th>Back</th>
+                            <td class="skill-name">Back Skill's name</td>
+                            <td class="skill-details"><font color="#c00"><i>Re-equip weapon</i></font></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
         
@@ -343,11 +388,21 @@
         </div>
     </div>
 
+    <div id="overlay" hidden>
+        <div id="overlay-panel">
+            <div id="overlay-panel-title"></div>
+            <div id="overlay-panel-content"></div>
+            <div id="overlay-panel-buttons"><a class="btn" id="overlay-panel-close-btn">Close</a></div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript" src="lib/global.js"></script>
 <script type="text/javascript" src="lib/amf.js"></script>
 <script type="text/javascript" src="lib/jquery.min.js"></script>
 <script type="text/javascript" src="lib/clipboard.min.js"></script>
 <script type="text/javascript" src="lib/KTAmfParser.js"></script>
+<script type="text/javascript" src="lib/Managers/KTGameDataManager.js"></script>
 <script type="text/javascript" src="lib/Managers/KTCharacterManager.js"></script>
 <script type="text/javascript" src="lib/Managers/KTConfigManager.js"></script>
 <script type="text/javascript" src="lib/Managers/KTPlayerManager.js"></script>
@@ -355,6 +410,5 @@
 <script type="text/javascript" src="lib/KTNetworkHandler.js"></script>
 <script type="text/javascript" src="lib/KanpaniTools.js"></script>
 <script type="text/javascript" src="panel.js"></script>
-</div>
 </body>
 </html>
