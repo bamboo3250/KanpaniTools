@@ -1,9 +1,10 @@
 #container {
     position: relative;
-    height: 590px;
+    height: 100%;
     width: 360px;
     background-image: url("../assets/background.jpg");
-    background-color: #ffffcc;
+    background-color: #c5a78f;
+    background-repeat: no-repeat;
 }
 
 #player-info-panel {
