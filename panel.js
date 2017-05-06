@@ -105,6 +105,11 @@
       KTUIManager.updateEmployeeList();
     });
 
+    $('#all-class-check').change(function() {
+      $('.class-check').prop('checked', $(this).prop('checked'));
+      KTUIManager.updateEmployeeList();
+    });    
+
     $('#expand-btn').click(function() {
       if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Expand All", 'clicked']);
       $('.employee-details').show();
