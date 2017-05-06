@@ -1,10 +1,10 @@
 # KanpaniTools
-A helpful tool for all Kanpani Girls players
+An useful tool for all Kanpani Girls players
 
 # How to install
 1. Fork this project to your local computer
-2. Enable *Developer Mode* in Chrome's Extensions page
-3. Click on *Load unpacked extension* button and choose this project folder
+2. Enable **Developer Mode** in Chrome's Extensions page
+3. Click on **Load unpacked extension** button and choose this project folder
 
 # Acknowledgement
 Thanks to these "senpai" projects, KanpaniTools can become what it is now.
