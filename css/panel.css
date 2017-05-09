@@ -277,6 +277,17 @@
     width: 100%;
 }
 
+.employee-assignment {
+    position: absolute;
+    top: 0px;
+    right: 130px;
+    font-size: 30px;
+    text-align: right;
+    font-weight: 800;
+    font-family: fantasy;
+    opacity: 0.13;
+}
+
 .employee-details {
     position: relative;
     width: 100%;
@@ -342,7 +353,7 @@
 
 .employee-policy {
     position: absolute;
-    bottom: 0px;
+    bottom: -2px;
     right: 0px;
     font-size: 14px;
     font-style: italic;
