@@ -113,6 +113,8 @@
     $('#expand-btn').click(function() {
       if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Expand All", 'clicked']);
       $('.employee-details').show();
+      $('.equipment-details').hide();
+      $('.selected-thumbnail-overlay').removeClass('selected-thumbnail-overlay');
       $('.employee-thumbnail-container .clickable-thumbnail-overlay').addClass('selected-thumbnail-overlay');
     });
 
