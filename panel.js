@@ -113,11 +113,14 @@
     $('#expand-btn').click(function() {
       if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Expand All", 'clicked']);
       $('.employee-details').show();
+      $('.employee-thumbnail-container .clickable-thumbnail-overlay').addClass('selected-thumbnail-overlay');
     });
 
     $('#collapse-btn').click(function() {
       if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Collapse All", 'clicked']);
       $('.employee-details').hide();
+      $('.equipment-details').hide();
+      $('.selected-thumbnail-overlay').removeClass('selected-thumbnail-overlay');
     });
 
     function hideOverlay() {

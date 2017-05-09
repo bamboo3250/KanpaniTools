@@ -269,78 +269,99 @@
     border-style: solid;
     border-color: black;
     margin: 2px 5px;
-    cursor: pointer;
-}
-
-.employee-panel:hover {
-    background-color: rgba(0, 139, 193, 0.2);
 }
 
 .employee-general {
     position: relative;
     height: 48px;
-    width: 320;
+    width: 100%;
 }
 
 .employee-details {
     position: relative;
-    width: 320px;
+    width: 100%;
 }
 
-.employee-thumbnail {
+.equipment-details {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.clickable-thumbnail-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.clickable-thumbnail-overlay:hover {
+    box-shadow: inset 0px 0px 10px #ff0;
+    background: rgba(64, 64, 0, 0.5);
+}
+
+.selected-thumbnail-overlay {
+    box-shadow: inset 0px 0px 10px #00f;
+    background: rgba(182, 182, 255, 0.5);
+}
+
+.employee-thumbnail-container {
     position: absolute;
     top: 2px;
     left: 2px;
+    width: 190px;
 }
 
 .class-thumbnail {
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 0px;
+    left: 0px;
 }
 
 .employee-name {
     position: absolute;
-    top: 2px;
-    left: 44px;
+    top: 0px;
+    left: 42px;
     font-size: 16px;
 }
 
 .promo-thumbnail {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: -2px;
+    left: -2px;
 }
 
 .employee-level {
     position: absolute;
-    bottom: 0px;
-    left: 44px;
+    bottom: -2px;
+    left: 42px;
     font-size: 14px;
 }
 
 .employee-policy {
     position: absolute;
     bottom: 0px;
-    right: 130px;
+    right: 0px;
     font-size: 14px;
     font-style: italic;
     color: #00a;
 }
 
-.weapon-thumbnail {
+.weapon-thumbnail-container {
     position: absolute;
     top: 4px;
     right: 86px;
 }
 
-.armor-thumbnail {
+.armor-thumbnail-container {
     position: absolute;
     top: 4px;
     right: 44px;
 }
 
-.accessory-thumbnail {
+.accessory-thumbnail-container {
     position: absolute;
     top: 4px;
     right: 2px;
@@ -360,6 +381,12 @@
 
 .stats-table td {
     padding-left: 3px;
+    text-align: left;
+}
+
+.stats-table th {
+    padding-left: 3px;
+    text-align: left;
 }
 
 .stats-value {

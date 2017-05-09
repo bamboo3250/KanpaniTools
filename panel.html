@@ -73,15 +73,27 @@
             <div id="employee-list">It's empty here!<br>Please go to Employees page in your game.</div>
             <div class="employee-panel" id="employee-template" hidden>
                 <div class="employee-general">
-                    <img src="" class="employee-thumbnail">
-                    <img src="" class="class-thumbnail">
-                    <div class="employee-name"></div>
-                    <img src="" class="promo-thumbnail">
-                    <div class="employee-level"></div>
-                    <div class="employee-policy"></div>
-                    <img src="assets/item_holder.png" class="weapon-thumbnail">
-                    <img src="assets/item_holder.png" class="armor-thumbnail">
-                    <img src="assets/item_holder.png" class="accessory-thumbnail">
+                    <div class="employee-thumbnail-container">
+                        <img src="" class="clickable-thumbnail employee-thumbnail">
+                        <img src="" class="class-thumbnail">
+                        <img src="" class="promo-thumbnail">
+                        <div class="employee-name"></div>
+                        <div class="employee-level"></div>
+                        <div class="employee-policy"></div>
+                        <div class="clickable-thumbnail-overlay"></div>
+                    </div>
+                    <div class="weapon-thumbnail-container">
+                        <img src="assets/item_holder.png" class="weapon-thumbnail">
+                        <div class="clickable-thumbnail-overlay"></div>
+                    </div>
+                    <div class="armor-thumbnail-container">
+                        <img src="assets/item_holder.png" class="armor-thumbnail">
+                        <div class="clickable-thumbnail-overlay"></div>
+                    </div>
+                    <div class="clickable-thumbnail accessory-thumbnail-container">
+                        <img src="assets/item_holder.png" class="accessory-thumbnail">
+                        <div class="clickable-thumbnail-overlay"></div>
+                    </div>
                 </div>
                 <div class="employee-details" hidden>
                     <table class="stats-table">
@@ -119,6 +131,33 @@
                             <th>Back</th>
                             <td class="skill-name">Back Skill's name</td>
                             <td class="skill-details"><font color="#c00"><i>Re-equip weapon</i></font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="equipment-details" hidden>
+                    <table class="stats-table">
+                        <tr>
+                            <th colspan="5">Name: <span class="stats-value equip-name">Equipment +0</span> <img class="equip-attribute" src=""></th>
+                        </tr>
+                        <tr>
+                            <th colspan="5">Description: <span class="stats-value equip-description"></span></th>
+                        </tr>
+                        <tr>
+                            <td><img class="stats-icon" src="assets/patk.png"> <span class="stats-value equip-patk">0</span></td>
+                            <td><img class="stats-icon" src="assets/matk.png"> <span class="stats-value equip-matk">0</span></td>
+                            <td>ACC <span class="stats-value equip-hit">0</span></td>
+                            <td>CRIT <span class="stats-value equip-crit">0</span></td>
+                            <td>EVA <span class="stats-value equip-eva">0</span></td>
+                        </tr>
+                        <tr>
+                            <td><img class="stats-icon" src="assets/pdef.png"> <span class="stats-value equip-pdef">0</span></td>
+                            <td><img class="stats-icon" src="assets/mdef.png"> <span class="stats-value equip-mdef">0</span></td>
+                            <td><span class="hidden-stats bonus1-name"></span> <span class="stats-value bonus1-value"></span></td>
+                            <td><span class="hidden-stats bonus2-name"></span> <span class="stats-value bonus2-value"></span></td>
+                            <td><span class="hidden-stats bonus3-name"></span> <span class="stats-value bonus3-value"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5"><span class="stats-value equip-effects"></span></td>
                         </tr>
                     </table>
                 </div>
