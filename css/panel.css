@@ -309,14 +309,28 @@
 }
 
 .clickable-thumbnail-overlay:hover {
-    box-shadow: inset 0px 0px 10px #ff0;
-    background: rgba(64, 64, 0, 0.5);
+    box-shadow: inset 0px 0px 10px #000;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .selected-thumbnail-overlay {
-    box-shadow: inset 0px 0px 10px #00f;
-    background: rgba(182, 182, 255, 0.5);
+    background: rgba(0, 0, 0, 0.6);
 }
+
+.thumbnail-overlay-tick {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.0;
+}
+
+.selected-thumbnail-overlay .thumbnail-overlay-tick {
+    opacity: 1.0;
+}
+
 
 .employee-thumbnail-container {
     position: absolute;
