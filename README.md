@@ -1,5 +1,5 @@
 # KanpaniTools
-An useful tool for all Kanpani Girls players
+An useful tool for all Kanpani Girls (かんぱに☆ガールズ) players
 
 # How to install
 1. Fork this project to your local computer
