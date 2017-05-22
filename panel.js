@@ -125,6 +125,12 @@
       $('.selected-thumbnail-overlay').removeClass('selected-thumbnail-overlay');
     });
 
+    $('.res-raw').click(function(e){
+      $('.current-raw').toggle();
+      $('.required-raw').toggle();
+      e.stopPropagation();
+    });
+
     function hideOverlay() {
       $('#overlay').animate({
         opacity: 0.0

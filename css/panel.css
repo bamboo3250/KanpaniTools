@@ -92,6 +92,19 @@
     color: #fff;
 }
 
+.res-raw {
+    position: absolute;;
+    bottom: -15px;
+    left: 0px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.res-raw:hover {
+    font-weight: bold;
+}
+
 #player-wood {
     position: absolute;
     top: 0px;
