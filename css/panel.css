@@ -155,18 +155,6 @@
     box-shadow: 1px 1px 1px #888;
 }
 
-#quest-log {
-    position: absolute;
-    top:0px;
-    left: 0px;
-    right: 0px;
-    bottom: 30px;
-    background-color: #eee;
-    overflow-y: scroll;
-    margin: 5px;
-    border-radius: 3px;
-}
-
 .btn {
     background-color: #17914c;
     border-radius: 3px;
@@ -190,6 +178,20 @@
 .danger-btn {
     background-color: #911625;
     color: #eee;
+}
+
+/* ================================= DIALOGUES TAB ================================= */
+
+#quest-log {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    background-color: #eee;
+    overflow-y: scroll;
+    margin: 5px;
+    border-radius: 3px;
 }
 
 #quest-log-btn-group {
@@ -218,6 +220,8 @@
     font-size: 14px;
     margin: 0px 2px;
 }
+
+/* ================================= EMPLOYEES TAB ================================= */
 
 #employee-filter {
     position: absolute;
@@ -462,6 +466,8 @@
     font-size: 14px;
 }
 
+/* ================================= TEAM TAB ================================= */
+
 .team-panel {
     height: 145px;
     width: 141px;
@@ -512,10 +518,10 @@
     right: 0px;
     height: 20px;
     text-align: center;
-    background-color: rgba(24, 146, 146,0.6);
+    background-color: rgba(0,0,0,0.8);
     font-size: 14px;
     color: #000;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 2px 2px 0px 0px;
     color: #eee;
 }
 
@@ -525,7 +531,7 @@
     left: 0px;
     right: 0px;
     bottom: 20px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .team-policy {
@@ -534,12 +540,11 @@
     right: 0px;
     bottom: 0px;
     height: 20px;
-    background-color: rgba(24, 146, 146,0.6);
+    background-color: rgba(0,0,0,0.8);
     text-align: center;
     font-size: 14px;
     color: #eee;
     font-style: italic;
-
 }
 
 .team-slot {
@@ -606,6 +611,190 @@
     top: 0px;
     right: 0px;
 }
+
+/* ================================= BATTLE TAB ================================= */
+
+.battle-team-panel {
+    height: 175px;
+    width: 290px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 1px 1px 1px #888;
+}
+
+#enemy-team-panel {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+#ally-team-panel {
+    position: absolute;
+    top: 285px;
+    right: 30px;
+}
+
+#battle-icon {
+    position: absolute;
+    top: 200px;
+    left: 135px;
+}
+
+.battle-team-slot {
+    width: 90px;
+    height: 59px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 3px;
+}
+
+#ally-team-panel .battle-team-slot-0 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#ally-team-panel .battle-team-slot-1 {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+
+#ally-team-panel .battle-team-slot-2 {
+    position: absolute;
+    top: 5px;
+    left: 195px;
+}
+
+#ally-team-panel .battle-team-slot-3 {
+    position: absolute;
+    top: 69px;
+    left: 5px;
+}
+
+#ally-team-panel .battle-team-slot-4 {
+    position: absolute;
+    top: 69px;
+    left: 100px;
+}
+
+#ally-team-panel .battle-team-slot-5 {
+    position: absolute;
+    top: 69px;
+    left: 195px;
+}
+
+#enemy-team-panel .battle-team-slot-5 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#enemy-team-panel .battle-team-slot-4 {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+
+#enemy-team-panel .battle-team-slot-3 {
+    position: absolute;
+    top: 5px;
+    left: 195px;
+}
+
+#enemy-team-panel .battle-team-slot-2 {
+    position: absolute;
+    top: 69px;
+    left: 5px;
+}
+
+#enemy-team-panel .battle-team-slot-1 {
+    position: absolute;
+    top: 69px;
+    left: 100px;
+}
+
+#enemy-team-panel .battle-team-slot-0 {
+    position: absolute;
+    top: 69px;
+    left: 195px;
+}
+
+.battle-leader-thumbnail {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.battle-promo-thumbnail {
+    position: absolute;
+    bottom: 13px;
+    left: -2px;
+}
+
+.battle-element-thumbnail {
+    position: absolute;
+    top: 0px;
+    left: 27px;
+}
+
+.battle-hp-container {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    height: 11px;
+}
+
+.battle-hp-background {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #222;
+    border-radius: 7px;
+}
+
+.battle-current-hp {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #189292;
+    border-radius: 7px;
+}
+
+.battle-current-hp-text {
+    position: absolute;
+    top: -2px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    color: #eee;
+}
+
+.battle-ko {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.battle-unit-info {
+    position: absolute;
+    top: 0px;
+    height: 44px;
+    left: 40px;
+    right: 0px;
+    color: #eee;
+    font-weight: bold;
+    font-size: 10px;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+/* ================================= OVERLAY ================================= */
 
 #overlay {
     position: absolute;
