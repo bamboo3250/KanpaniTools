@@ -9,7 +9,7 @@
   }
 
   $(document).ready(function() {
-    if (!Kanpani.DEBUG) _gaq.push(['_trackPageview']);  
+    GA.pageView();
 
     Kanpani.init();
 
@@ -20,13 +20,13 @@
       setTimeout(function() {
         $('#copy-quest-log-btn').text(oldValue);
       }, 1000);
-      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Copy Quest Log", 'clicked']);
+      GA.click('Copy Quest Log');
       e.clearSelection();
     });
 
     $('#clear-quest-log-btn').click(function() {
       $('#quest-log').text('');
-      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Clear Quest Log", 'clicked']);
+      GA.click('Clear Quest Log');
     });
 
     $('#translate-btn').click(function() {
@@ -56,7 +56,7 @@
       if (stack.length > 0) {
         openGoogleTranslate(stack.join(SCENE_SEPARATOR));
       }
-      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Translate Quest Log", 'clicked']);
+      GA.click('Translate Quest Log');
     });
 
     $('#cookies-hack').click(function() {
@@ -79,6 +79,7 @@
 
       $('.tab-content-panel').hide();
       $('#quest-log-tab-panel').show();
+      GA.click('Show Quest Log tab');
     });
 
     $('#employees-tab-btn').click(function() {
@@ -87,6 +88,7 @@
 
       $('.tab-content-panel').hide();
       $('#employees-tab-panel').show();
+      GA.click('Show Employees tab');
     });
 
     $('#teams-tab-btn').click(function() {
@@ -95,6 +97,7 @@
 
       $('.tab-content-panel').hide();
       $('#teams-tab-panel').show();
+      GA.click('Show Teams tab');
     });
 
     $('#battle-tab-btn').click(function() {
@@ -103,6 +106,7 @@
 
       $('.tab-content-panel').hide();
       $('#battle-tab-panel').show();
+      GA.click('Show Battle tab');
     });
 
     $('#sort-select').change(function() {
@@ -119,24 +123,25 @@
     });    
 
     $('#expand-btn').click(function() {
-      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Expand All", 'clicked']);
       $('.employee-details').show();
       $('.equipment-details').hide();
       $('.selected-thumbnail-overlay').removeClass('selected-thumbnail-overlay');
       $('.employee-thumbnail-container .clickable-thumbnail-overlay').addClass('selected-thumbnail-overlay');
+      GA.click('Expand All');
     });
 
     $('#collapse-btn').click(function() {
-      if (!Kanpani.DEBUG) _gaq.push(['_trackEvent', "Collapse All", 'clicked']);
       $('.employee-details').hide();
       $('.equipment-details').hide();
       $('.selected-thumbnail-overlay').removeClass('selected-thumbnail-overlay');
+      GA.click('Collapse All');
     });
 
     $('.res-raw').click(function(e){
       $('.current-raw').toggle();
       $('.required-raw').toggle();
       e.stopPropagation();
+      GA.click('Toggle STR/INT');
     });
 
     function hideOverlay() {
