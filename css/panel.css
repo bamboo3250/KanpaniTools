@@ -296,12 +296,13 @@
 
 .employee-panel {
     position: relative;
-    background-color: rgba(117, 212, 249, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     margin: 2px 5px;
+    color: #eee;
 }
 
 .employee-general {
@@ -318,7 +319,7 @@
     text-align: right;
     font-weight: 800;
     font-family: fantasy;
-    opacity: 0.13;
+    opacity: 0.6;
 }
 
 .employee-details {
@@ -342,12 +343,12 @@
 }
 
 .clickable-thumbnail-overlay:hover {
-    box-shadow: inset 0px 0px 10px #000;
-    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 0px 10px #fff;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .selected-thumbnail-overlay {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .thumbnail-overlay-tick {
@@ -380,7 +381,7 @@
 
 .employee-name {
     position: absolute;
-    top: -2px;
+    top: -4px;
     left: 42px;
     font-size: 16px;
 }
@@ -404,7 +405,7 @@
     right: 0px;
     font-size: 14px;
     font-style: italic;
-    color: #00a;
+    color: #3cf;
 }
 
 .employee-awaken {
@@ -439,7 +440,7 @@
 }
 
 .stats-table {
-    color: #a5611d;
+    color: #e4974a;
     font-size: 12px;
     font-weight: bold;
     width: 100%;
@@ -456,16 +457,16 @@
 }
 
 .stats-value {
-    color: #222;
+    color: #eee;
 }
 
 .hidden-stats {
-    color: #1d61a5;
+    color: #4294e6;
 }
 
 .skill-table {
     font-size: 12px;
-    color: #222;
+    color: #eee;
     width: 100%;
     text-align: left;
 }
