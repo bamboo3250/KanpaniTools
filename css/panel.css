@@ -380,7 +380,7 @@
 
 .employee-name {
     position: absolute;
-    top: 0px;
+    top: -2px;
     left: 42px;
     font-size: 16px;
 }
@@ -405,6 +405,14 @@
     font-size: 14px;
     font-style: italic;
     color: #00a;
+}
+
+.employee-awaken {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+    height: 20px;
+    width: 80px;
 }
 
 .weapon-thumbnail-container {
