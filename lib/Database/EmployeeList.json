@@ -374,6 +374,12 @@
         "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
         "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
     },{
+        "_no": "225", "_id": "10340009_987e5626", "fullName": "Plulua Capre", "japaneseName": "プルルア・カプル", "commonNames": ["Plulua"], "height": 0, "cwId": 22,
+        "baseStats": { "_str": 6, "_vit": 6, "_agi": 24, "_dex": 30, "_int": 6, "_pie": 3, "_luk": 5},
+        "maxStats0": { "_str": 162, "_vit": 209, "_agi": 388, "_dex": 460, "_int": 159, "_pie": 160, "_luk": 174},
+        "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
+        "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
+    },{
         "_no": "EX001", "_id": "10349001_eea406c9", "fullName": "[Apprentice of The Spirit] Liliana Bartek", "japaneseName": "[精霊の熾徒]リリアナ・バールテク", "commonNames": ["Ex Liliana", "Liliana EX"], "height": 0, "cwId": 1,
         "baseStats": { "_str": 9, "_vit": 6, "_agi": 28, "_dex": 38, "_int": 4, "_pie": 5, "_luk": 6},
         "maxStats0": { "_str": 162, "_vit": 209, "_agi": 388, "_dex": 460, "_int": 159, "_pie": 160, "_luk": 174},
@@ -473,6 +479,12 @@
         "maxStats0": { "_str": 473, "_vit": 277, "_agi": 225, "_dex": 160, "_int": 151, "_pie": 171, "_luk": 275},
         "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
         "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
+    },{
+        "_no": "226", "_id": "10540008_387a0809", "fullName": "Mammon Velceles", "japaneseName": "マモン・ベルセリス", "commonNames": ["Mammon"], "height": 0, "cwId": 30,
+        "baseStats": { "_str": 32, "_vit": 12, "_agi": 11, "_dex": 4, "_int": 2, "_pie": 13, "_luk": 2},
+        "maxStats0": { "_str": 473, "_vit": 277, "_agi": 225, "_dex": 160, "_int": 151, "_pie": 171, "_luk": 275},
+        "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
+        "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
     },
 
     {
@@ -513,6 +525,12 @@
         "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
     },{
         "_no": "213", "_id": "10640007_86386adf", "fullName": "Finian Meleth", "japaneseName": "フィニアン・メレス", "commonNames": ["Finian"], "height": 0, "cwId": 0,
+        "baseStats": { "_str": 9, "_vit": 12, "_agi": 9, "_dex": 8, "_int": 10, "_pie": 25, "_luk": 8},
+        "maxStats0": { "_str": 166, "_vit": 246, "_agi": 213, "_dex": 210, "_int": 290, "_pie": 395, "_luk": 219},
+        "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
+        "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
+    },{
+        "_no": "227", "_id": "10640008_ca2de5f1", "fullName": "Flaum Lium", "japaneseName": "フラウム・リウム", "commonNames": ["Flaum"], "height": 0, "cwId": 26,
         "baseStats": { "_str": 9, "_vit": 12, "_agi": 9, "_dex": 8, "_int": 10, "_pie": 25, "_luk": 8},
         "maxStats0": { "_str": 166, "_vit": 246, "_agi": 213, "_dex": 210, "_int": 290, "_pie": 395, "_luk": 219},
         "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
