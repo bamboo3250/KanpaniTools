@@ -58,6 +58,7 @@
             <a class="btn tab-btn" id="teams-tab-btn">Teams</a>
             <a class="btn tab-btn" id="battle-tab-btn">Battle</a>
             <a class="btn tab-btn" id="quest-log-tab-btn">Dialogues</a>
+            <a class="btn tab-btn" id="settings-tab-btn">Settings</a>
         </div>
         
         <div class="tab-content-panel" id="employees-tab-panel">
@@ -107,7 +108,8 @@
                         <img src="" class="promo-thumbnail">
                         <div class="employee-name"></div>
                         <div class="employee-level"></div>
-                        <div class="employee-policy"></div>
+                        <div class="employee-policy employee-normal-policy"></div>
+                        <div class="employee-policy employee-raid-policy" hidden></div>
                         <div class="employee-awaken"></div>
                         <div class="clickable-thumbnail-overlay"><img class="thumbnail-overlay-tick" src="assets/green-tick.png"></div>
                     </div>
@@ -234,7 +236,8 @@
                         <img src="" class="team-leader-thumbnail">
                     </div>
                 </div>
-                <div class="team-policy"></div>
+                <div class="team-policy team-normal-policy"></div>
+                <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-1">
                 <div class="team-name">Team 2</div>
@@ -276,7 +279,8 @@
                         <img src="" class="team-leader-thumbnail">
                     </div>
                 </div>
-                <div class="team-policy"></div>
+                <div class="team-policy team-normal-policy"></div>
+                <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-2">
                 <div class="team-name">Team 3</div>
@@ -318,7 +322,8 @@
                         <img src="" class="team-leader-thumbnail">
                     </div>
                 </div>
-                <div class="team-policy"></div>
+                <div class="team-policy team-normal-policy"></div>
+                <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-3">
                 <div class="team-name">Team 4</div>
@@ -360,7 +365,8 @@
                         <img src="" class="team-leader-thumbnail">
                     </div>
                 </div>
-                <div class="team-policy"></div>
+                <div class="team-policy team-normal-policy"></div>
+                <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-4">
                 <div class="team-name">Team 5</div>
@@ -402,7 +408,8 @@
                         <img src="" class="team-leader-thumbnail">
                     </div>
                 </div>
-                <div class="team-policy"></div>
+                <div class="team-policy team-normal-policy"></div>
+                <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-5">
                 <div class="team-name">Team 6</div>
@@ -444,7 +451,8 @@
                         <img src="" class="team-leader-thumbnail">
                     </div>
                 </div>
-                <div class="team-policy"></div>
+                <div class="team-policy team-normal-policy"></div>
+                <div class="team-policy team-raid-policy" hidden></div>
             </div>
         </div>
 
@@ -531,7 +539,7 @@
                         <img src="" class="battle-ko">
                     </div>
                 </div>
-                <div class="team-policy"></div>
+                <div class="battle-policy"></div>
             </div>
             <div class="battle-team-panel" id="ally-team-panel">
                 <div class="team-name">YOUR TEAM</div>
@@ -615,7 +623,7 @@
                         <img src="" class="battle-ko">
                     </div>
                 </div>
-                <div class="team-policy"></div>
+                <div class="battle-policy"></div>
             </div>
             <img src="assets/battle-icon.png" id="battle-icon">
         </div>
@@ -626,6 +634,21 @@
                 <a class="btn copy-btn" id="copy-quest-log-btn" data-clipboard-target="#quest-log">Copy</a>
                 <a class="btn" id="translate-btn">Translate</a>
                 <a class="btn danger-btn" id="clear-quest-log-btn">Clear</a>
+            </div>
+        </div>
+
+        <div class="tab-content-panel" id="settings-tab-panel" hidden>
+            <div id="settings-content">
+                <h3>Utilities</h3>
+                <a class="btn" id="cookies-hack">Set Cookies</a><br>
+                
+                <h3>General</h3>
+                Show Strategy Type 
+                <select id="strategy-type-select">
+                    <option value="normal" selected>Normal Battle</option>
+                    <option value="raid">Raid Boss</option>
+                </select><br>
+
             </div>
         </div>
     </div>

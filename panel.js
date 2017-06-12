@@ -109,6 +109,15 @@
       GA.click('Show Battle tab');
     });
 
+    $('#settings-tab-btn').click(function() {
+      $('.tab-btn').removeClass('tab-active-btn');
+      $(this).addClass('tab-active-btn');
+
+      $('.tab-content-panel').hide();
+      $('#settings-tab-panel').show();
+      GA.click('Show Settings tab');
+    });
+
     $('#sort-select').change(function() {
       KTUIManager.updateEmployeeList();
     });
@@ -162,6 +171,16 @@
 
     $('#overlay-panel-close-btn').click(function() {
       hideOverlay();
+    });
+
+    $('#strategy-type-select').change(function() {
+      $('.employee-policy').hide();
+      $('.team-policy').hide();
+      var policyType = $(this).val();
+      $('.employee-' + policyType + '-policy').show();
+      $('.team-' + policyType + '-policy').show();
+      KTConfigManager.setPolicyType(policyType);
+      KTConfigManager.saveToLocalStorage();
     });
   });
 })();

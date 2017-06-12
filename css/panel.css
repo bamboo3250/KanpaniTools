@@ -412,6 +412,10 @@
     color: #3cf;
 }
 
+.employee-raid-policy {
+    color: #fc3;
+}
+
 .employee-awaken {
     position: absolute;
     top: 16px;
@@ -556,8 +560,12 @@
     background-color: rgba(0,0,0,0.8);
     text-align: center;
     font-size: 14px;
-    color: #eee;
+    color: #3cf;
     font-style: italic;
+}
+
+.team-raid-policy {
+    color: #fc3;
 }
 
 .team-slot {
@@ -805,6 +813,25 @@
     font-size: 10px;
     padding-top: 2px;
     padding-left: 2px;
+}
+
+.battle-policy {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 20px;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    font-size: 14px;
+    color: #3cf;
+    font-style: italic;
+}
+
+
+/* ================================= SETTINGS TAB ================================= */
+#settings-content {
+    margin: 5px;
 }
 
 /* ================================= OVERLAY ================================= */
