@@ -121,6 +121,8 @@
 
     $('#sort-select').change(function() {
       KTUIManager.updateEmployeeList();
+      KTConfigManager.setSortBy($(this).val());
+      KTConfigManager.saveToLocalStorage();
     });
 
     $('.class-check').change(function() {
