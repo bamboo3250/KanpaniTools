@@ -375,6 +375,7 @@
     top: 2px;
     left: 2px;
     right: 130px;
+    cursor: pointer;
 }
 
 .class-thumbnail {
