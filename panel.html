@@ -111,8 +111,18 @@
                         <img src="" class="promo-thumbnail">
                         <div class="employee-name"></div>
                         <div class="employee-level"></div>
-                        <div class="employee-policy employee-normal-policy"></div>
-                        <div class="employee-policy employee-raid-policy" hidden></div>
+                        <div class="employee-policy">
+                            <div class="employee-normal-policy"></div>
+                            <div class="employee-raid-policy" hidden></div>
+                        </div>
+                        <div class="employee-current-exp-container" hidden>
+                            <div class="employee-current-exp"></div>
+                            <div class="employee-current-exp-text"></div>
+                        </div>
+                        <div class="employee-remain-exp-container" hidden>
+                            <div class="employee-remain-exp"></div>
+                            <div class="employee-remain-exp-text"></div>
+                        </div>
                         <div class="employee-awaken"></div>
                         <!--div class="clickable-thumbnail-overlay"><img class="thumbnail-overlay-tick" src="assets/green-tick.png"></div-->
                     </div>
@@ -652,6 +662,13 @@
                     <option value="raid">Raid Boss</option>
                 </select><br>
 
+                <h3>Employees Tab</h3>
+                Additional Info
+                <select id="additional-info-select">
+                    <option value="strategy" selected>Strategy</option>
+                    <option value="current-exp">Current EXP</option>
+                    <option value="remain-exp">Remaining EXP</option>
+                </select><br>
             </div>
         </div>
     </div>

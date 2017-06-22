@@ -410,11 +410,67 @@
     right: 0px;
     font-size: 14px;
     font-style: italic;
+}
+
+.employee-normal-policy {
     color: #3cf;
 }
 
 .employee-raid-policy {
     color: #fc3;
+}
+
+.employee-current-exp-container {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 12px;
+    background-color: #555;
+}
+
+.employee-current-exp-text {
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    font-size: 11px;
+    z-index: 1;
+    color: #eee;
+}
+
+.employee-current-exp {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: #189292;
+}
+
+.employee-remain-exp-container {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 12px;
+    background-color: #555;
+    font-size: 10px;
+}
+
+.employee-remain-exp {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: #189292;
+}
+
+.employee-remain-exp-text {
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    font-size: 11px;
+    z-index: 1;
+    color: #eee;
 }
 
 .employee-awaken {

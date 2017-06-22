@@ -177,12 +177,29 @@
     });
 
     $('#strategy-type-select').change(function() {
-      $('.employee-policy').hide();
+      $('.employee-normal-policy').hide();
+      $('.employee-raid-policy').hide();
       $('.team-policy').hide();
       var policyType = $(this).val();
       $('.employee-' + policyType + '-policy').show();
       $('.team-' + policyType + '-policy').show();
       KTConfigManager.setPolicyType(policyType);
+      KTConfigManager.saveToLocalStorage();
+    });
+
+    $('#additional-info-select').change(function() {
+      var type = $(this).val();
+      $('.employee-policy').hide();
+      $('.employee-current-exp-container').hide();
+      $('.employee-remain-exp-container').hide();
+      if (type == 'strategy') {
+        $('.employee-policy').show();
+      } else if (type == 'current-exp') {
+        $('.employee-current-exp-container').show();
+      } else if (type == 'remain-exp') {
+        $('.employee-remain-exp-container').show();
+      }
+      KTConfigManager.setEmployeesTabAdditionalInfo(type);
       KTConfigManager.saveToLocalStorage();
     });
   });
