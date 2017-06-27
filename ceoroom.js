@@ -58,7 +58,14 @@
       return;
     }
     loadEmployeePanel(cards[index], type, function() {
-      loadEmployeePanelRecursively(cards, index+1, type, callback);
+      if ((index%100) == 0) {
+        setTimeout(function() {
+          loadEmployeePanelRecursively(cards, index+1, type, callback);    
+        }, 0);
+      } else {
+        loadEmployeePanelRecursively(cards, index+1, type, callback);
+      }
+      
     });
   }
 
