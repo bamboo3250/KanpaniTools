@@ -12,6 +12,11 @@
             window.open('http://www.dmm.com/netgame/social/-/gadgets/=/app_id=181259/');
         });
 
+        $('#ceo-room').click(function() {
+            GA.click('Opened CEO Room');
+            window.open('./ceoroom.html');
+        });
+
         $('#wiki').click(function() {
             GA.click('Wiki clicked');
             window.open('http://wikiwiki.jp/kanpani/');

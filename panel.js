@@ -11,7 +11,7 @@
   $(document).ready(function() {
     GA.pageView();
 
-    Kanpani.init();
+    Kanpani.init(true);
     $(document).tooltip();
 
     var clipboardBtn = new Clipboard('.copy-btn');

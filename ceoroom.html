@@ -1,0 +1,217 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/ceoroom.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+</head>
+<body>
+    <img id="ceo-room-icon" src="http://67.205.150.236/KanpaniTools/ceo-room.png">
+    <div id="ceo-room-title">CEO Room</div>
+    <div id="main-tab-buttons-container">
+        <div class="main-tab-btn active-main-tab-btn" id="main-tab-btn-employees-by-rarity">Employees by Rarity</div>
+        <div class="main-tab-btn" id="main-tab-btn-employees-by-class">Employees by Class</div>
+        <div class="main-tab-btn" id="main-tab-btn-catalog">Catalogs</div>
+        
+    </div>
+    <div id="main-tab-content-container">
+        <div class="main-tab-content" id="main-tab-content-catalog" hidden>
+            <table>
+                <tr>
+                    <th></th>
+                    <th><img src="./assets/101_large.png" title="Fighter"></th>
+                    <th><img src="./assets/102_large.png" title="Ronin"></th>
+                    <th><img src="./assets/103_large.png" title="Archer"></th>
+                    <th><img src="./assets/104_large.png" title="Soldier"></th>
+                    <th><img src="./assets/105_large.png" title="Warrior"></th>
+                    <th><img src="./assets/106_large.png" title="Cleric"></th>
+                    <th><img src="./assets/107_large.png" title="Rogue"></th>
+                    <th><img src="./assets/108_large.png" title="Magician"></th>
+                </tr>
+                <tr>
+                    <th>5<img src="./assets/star_on.png"></th>
+                    <td id="catalog-fighter-5"></td>
+                    <td id="catalog-ronin-5"></td>
+                    <td id="catalog-archer-5"></td>
+                    <td id="catalog-soldier-5"></td>
+                    <td id="catalog-warrior-5"></td>
+                    <td id="catalog-cleric-5"></td>
+                    <td id="catalog-rogue-5"></td>
+                    <td id="catalog-magician-5"></td>
+                </tr>
+                <tr>
+                    <th>4<img src="./assets/star_on.png"></th>
+                    <td id="catalog-fighter-4"></td>
+                    <td id="catalog-ronin-4"></td>
+                    <td id="catalog-archer-4"></td>
+                    <td id="catalog-soldier-4"></td>
+                    <td id="catalog-warrior-4"></td>
+                    <td id="catalog-cleric-4"></td>
+                    <td id="catalog-rogue-4"></td>
+                    <td id="catalog-magician-4"></td>
+                </tr>
+                <tr>
+                    <th>3<img src="./assets/star_on.png"></th>
+                    <td id="catalog-fighter-3"></td>
+                    <td id="catalog-ronin-3"></td>
+                    <td id="catalog-archer-3"></td>
+                    <td id="catalog-soldier-3"></td>
+                    <td id="catalog-warrior-3"></td>
+                    <td id="catalog-cleric-3"></td>
+                    <td id="catalog-rogue-3"></td>
+                    <td id="catalog-magician-3"></td>
+                </tr>
+                <tr>
+                    <th>2<img src="./assets/star_on.png"></th>
+                    <td id="catalog-fighter-2"></td>
+                    <td id="catalog-ronin-2"></td>
+                    <td id="catalog-archer-2"></td>
+                    <td id="catalog-soldier-2"></td>
+                    <td id="catalog-warrior-2"></td>
+                    <td id="catalog-cleric-2"></td>
+                    <td id="catalog-rogue-2"></td>
+                    <td id="catalog-magician-2"></td>
+                </tr>
+                <tr>
+                    <th>1<img src="./assets/star_on.png"></th>
+                    <td id="catalog-fighter-1"></td>
+                    <td id="catalog-ronin-1"></td>
+                    <td id="catalog-archer-1"></td>
+                    <td id="catalog-soldier-1"></td>
+                    <td id="catalog-warrior-1"></td>
+                    <td id="catalog-cleric-1"></td>
+                    <td id="catalog-rogue-1"></td>
+                    <td id="catalog-magician-1"></td>
+                </tr>
+            </table>
+            <br>
+            <span id="catalog-total"></span><br>
+            <span><b>Note</b>: Remember to check your in-game Catalogs frequently to update the list here!</span>
+        </div>
+
+        <div class="main-tab-content" id="main-tab-content-employees-by-rarity">
+            <div class="employees-filter">
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-class-1" type="checkbox" checked><img src="./assets/101.jpg">
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-class-2" type="checkbox" checked><img src="./assets/102.jpg">
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-class-3" type="checkbox" checked><img src="./assets/103.jpg">
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-class-4" type="checkbox" checked><img src="./assets/104.jpg">
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-class-5" type="checkbox" checked><img src="./assets/105.jpg">
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-class-6" type="checkbox" checked><img src="./assets/106.jpg">
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-class-7" type="checkbox" checked><img src="./assets/107.jpg">
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-class-8" type="checkbox" checked><img src="./assets/108.jpg">
+                <br>
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-promo-2" type="checkbox" checked>2nd Promotion
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-promo-1" type="checkbox" checked>1st Promotion
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-promo-0" type="checkbox" checked>No Promotion
+                <input class="employees-by-rarity-filter" id="employees-by-rarity-level-1" type="checkbox" checked>Lv1
+                <br>
+                <input id="employees-by-rarity-equipment" type="checkbox">Equipments
+            </div>
+            <br>
+            <table>
+                <tr>
+                    <th>5<img src="./assets/star_on.png"></th>
+                    <td id="employees-by-rarity-5"></td>
+                </tr>
+                <tr>
+                    <th>4<img src="./assets/star_on.png"></th>
+                    <td id="employees-by-rarity-4"></td>
+                </tr>
+                <tr>
+                    <th>3<img src="./assets/star_on.png"></th>
+                    <td id="employees-by-rarity-3"></td>
+                </tr>
+                <tr>
+                    <th>2<img src="./assets/star_on.png"></th>
+                    <td id="employees-by-rarity-2"></td>
+                </tr>
+                <tr>
+                    <th>1<img src="./assets/star_on.png"></th>
+                    <td id="employees-by-rarity-1"></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="main-tab-content" id="main-tab-content-employees-by-class" hidden>
+            <div class="employees-filter">
+                <input class="employees-by-class-filter" id="employees-by-class-rarity-5" type="checkbox" checked> 5<img src="./assets/star_on.png">
+                <input class="employees-by-class-filter" id="employees-by-class-rarity-4" type="checkbox" checked> 4<img src="./assets/star_on.png">
+                <input class="employees-by-class-filter" id="employees-by-class-rarity-3" type="checkbox" checked> 3<img src="./assets/star_on.png">
+                <input class="employees-by-class-filter" id="employees-by-class-rarity-2" type="checkbox" checked> 2<img src="./assets/star_on.png">
+                <input class="employees-by-class-filter" id="employees-by-class-rarity-1" type="checkbox" checked> 1<img src="./assets/star_on.png">
+                <br>
+                <input class="employees-by-class-filter" id="employees-by-class-promo-2" type="checkbox" checked>2nd Promotion
+                <input class="employees-by-class-filter" id="employees-by-class-promo-1" type="checkbox" checked>1st Promotion
+                <input class="employees-by-class-filter" id="employees-by-class-promo-0" type="checkbox" checked>No Promotion
+                <input class="employees-by-class-filter" id="employees-by-class-level-1" type="checkbox" checked>Lv1
+                <br>
+                <input id="employees-by-class-equipment" type="checkbox">Equipments
+            </div>
+            <br>
+            <table>
+                <tr>
+                    <th><img src="./assets/101_large.png"></th>
+                    <td id="employees-by-class-1"></td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/102_large.png"></th>
+                    <td id="employees-by-class-2"></td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/103_large.png"></th>
+                    <td id="employees-by-class-3"></td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/104_large.png"></th>
+                    <td id="employees-by-class-4"></td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/105_large.png"></th>
+                    <td id="employees-by-class-5"></td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/106_large.png"></th>
+                    <td id="employees-by-class-6"></td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/107_large.png"></th>
+                    <td id="employees-by-class-7"></td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/108_large.png"></th>
+                    <td id="employees-by-class-8"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="employee-panel" id="employee-panel-template" hidden>
+        <div class="employee-info">
+            <img class="employee-thumbnail" src="http://67.205.150.236/storage/thumbnail/10140002_d3d896dc.png">
+            <div class="employee-name">Leona</div>
+            <div class="employee-level"><img height="12px" src="./assets/promo2.png"> Lv19</div>
+            <div class="employee-awaken">
+                <img src="./assets/awakening_on.png"><img src="./assets/awakening_on.png"><img src="./assets/awakening_on.png"><img src="./assets/awakening_off.png"><img src="./assets/awakening_off.png">
+            </div>
+        </div>
+        <div class="employee-equipment" hidden>
+            <img class="employee-weapon" src="http://67.205.150.236/storage/equipment/small/30811704.png">
+            <img class="employee-armor" src="http://67.205.150.236/storage/equipment/small/35119715.png">
+            <img class="employee-accessory" src="http://67.205.150.236/storage/equipment/small/32998105.png">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/global.js"></script>
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="lib/clipboard.min.js"></script>
+    <script type="text/javascript" src="lib/Managers/KTGameDataManager.js"></script>
+    <script type="text/javascript" src="lib/Managers/KTCharacterManager.js"></script>
+    <script type="text/javascript" src="lib/Managers/KTConfigManager.js"></script>
+    <script type="text/javascript" src="lib/Managers/KTPlayerManager.js"></script>
+    <script type="text/javascript" src="lib/Managers/KTUIManager.js"></script>
+    <script type="text/javascript" src="lib/KanpaniTools.js"></script>
+    <script type="text/javascript" src="ceoroom.js"></script>
+</body>
+</html>

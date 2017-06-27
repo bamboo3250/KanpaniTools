@@ -1,0 +1,175 @@
+body {
+    position: relative;
+    background-color: #bbb;
+}
+
+#ceo-room-icon {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 100px;
+}
+
+#ceo-room-title {
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+#main-tab-buttons-container {
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    width: 150px;
+    bottom: 0px;
+    background-color: #bbb;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+#main-tab-content-container {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.main-tab-btn {
+    background-color: #555;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px 10px;
+    margin-bottom: 3px;
+    color: #999;
+    cursor: pointer;
+}
+
+.active-main-tab-btn {
+    background-color: #333;
+    color: #eee;
+}
+
+.main-tab-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    color: #eee;
+    overflow: auto;
+}
+
+table, th, td {
+    color: #eee;
+    border-collapse: collapse;
+}
+
+/* ================================= CATALOGS ================================= */
+
+#main-tab-content-catalog table td {
+    width: 120px;
+    padding: 5px;
+}
+
+.gray-image {
+  -webkit-filter: brightness(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: brightness(0); /* Microsoft Edge and Firefox 35+ */
+}
+
+.gray-image:hover {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+#catalog-total {
+    font-size: 24px;
+}
+
+/* ================================= EMPLOYEES ================================= */
+#main-tab-content-employees-by-rarity td {
+    padding: 10px;
+}
+
+#main-tab-content-employees-by-class td {
+    padding: 10px;
+}
+
+.employees-filter {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.employee-panel {
+    width: 130px;
+    background-color: #222;
+    border: 1px solid #777;
+    border-radius: 5px;
+    float:left;
+    margin: 2px;
+}
+
+.employee-info {
+    position: relative;
+    width: 130px;
+    height: 50px;
+}
+
+.employee-equipment {
+    position: relative;
+    width: 130px;
+    height: 45px;
+}
+
+
+.employee-thumbnail {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+.employee-weapon {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.employee-armor {
+    position: absolute;
+    top: 0px;
+    left: 45px;
+}
+
+.employee-accessory {
+    position: absolute;
+    top: 0px;
+    left: 85px;
+}
+
+.employee-name {
+    position: absolute;
+    top: 0px;
+    left: 48px;
+    font-size: 16px;
+}
+
+.employee-level {
+    position: absolute;
+    top: 19px;
+    left: 48px;
+    font-size: 12px;
+}
+
+.employee-awaken {
+    position: absolute;
+    top: 33px;
+    left: 45px;
+}
