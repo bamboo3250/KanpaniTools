@@ -25,13 +25,18 @@
   function initCatalog() {
     var characters = KTCharacterManager.characters;
     var getCount = 0;
+    var userId = null;
+    if (KTPlayerManager.player) {
+      userId = KTPlayerManager.player.status.user_id;
+    }
+
     for(var i=0;i<characters.length;i++) {
       var id = characters[i]._id;
       var characterClass = classIdToClassName(id.charAt(2));
       var characterRarity = id.charAt(3);
 
       var imageClass = '';
-      if (typeof KTPlayerManager.card_book[id] == 'undefined') {
+      if (!userId || (typeof KTPlayerManager.card_book[userId] == 'undefined')  || (typeof KTPlayerManager.card_book[userId][id] == 'undefined')) {
         imageClass = 'class="gray-image"';
       } else {
         getCount++;
