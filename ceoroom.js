@@ -63,7 +63,7 @@
       return;
     }
     loadEmployeePanel(cards[index], type, function() {
-      if ((index%100) == 0) {
+      if ((index%100) == 99) {
         setTimeout(function() {
           loadEmployeePanelRecursively(cards, index+1, type, callback);    
         }, 0);
