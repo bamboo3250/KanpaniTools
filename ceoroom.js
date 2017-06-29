@@ -277,6 +277,45 @@
     });
   }
 
+  function sortyBySkillId(a, b) {
+    return a.skill_id - b.skill_id;
+  }
+
+  function initSkills() {
+    var skills = KTGameDataManager.skillLibrary;
+    console.log(skills);
+    //skills.sort(sortyBySkillId);
+
+    var total = 0;
+    for(var key in skills) {
+      var skill = skills[key];
+      var skillId = skill.skill_id + '';
+      var classId = skillId.charAt(2);
+      var skillType = skillId.charAt(3);
+
+      var rowText = '<td>' + skillId + '</td>';
+      rowText += '<td>' + skill.skill_name + '</td>';
+      if (skill.attribute > 0) {
+        rowText += '<td><img src="../../assets/attribute' + skill.attribute + '.png"></td>';  
+      } else {
+        rowText += '<td>None</td>';
+      }
+      rowText += '<td>' + KTUIManager.getSkillDetails(skill) + '</td>';
+
+      if (skillType == '5' || skillType == '7' || skillType == '8') { //cw
+        skillType = 'cw';
+      } else if (skillType == '6' || skillType == '9') { //event
+        skillType = 'event';
+      } else {
+        skillType = 'regular';
+      }
+
+      $('#skills-table-' + classId + '-' + skillType + ' tbody').append('<tr>' + rowText + '</tr>');
+      total++;
+    }
+    $('#main-tab-btn-skills').append(' (' + total + ')')
+  }
+
   $(document).ready(function() {
     GA.pageView();
 
@@ -300,6 +339,11 @@
       } else if (id == 'main-tab-btn-employees-by-class') {
         $('#main-tab-content-employees-by-class').show();
         GA.click('Open Employees by Class');
+      
+      } else if (id == 'main-tab-btn-skills') {
+        $('#main-tab-content-skills').show();
+        GA.click('Open Skills');
+      
       }
     });
 
@@ -307,6 +351,7 @@
         initCatalog();
         initEmployeesByRarity();
         initEmployeesByClass();
+        initSkills();
     });
     
   });
