@@ -298,7 +298,7 @@
 
   function initSkills() {
     var skills = KTGameDataManager.skillLibrary;
-    console.log(skills);
+    //console.log(skills);
     //skills.sort(sortyBySkillId);
 
     var total = 0;

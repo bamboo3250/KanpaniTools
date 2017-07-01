@@ -881,8 +881,15 @@
     background-color: rgba(0,0,0,0.8);
     text-align: center;
     font-size: 14px;
-    color: #3cf;
     font-style: italic;
+}
+
+.battle-normal-policy {
+    color: #3cf;
+}
+
+.battle-raid-policy {
+    color: #fc3;
 }
 
 
