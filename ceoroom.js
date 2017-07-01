@@ -224,6 +224,16 @@
         $('#main-tab-content-employees-by-rarity .employee-equipment').hide();
       }
     });
+
+    $('#employees-by-rarity-class-all').change(function() {
+      $('.employees-by-rarity-class').prop('checked', $(this).prop('checked'));
+      loadEmployeesByRarity();
+    });
+
+    $('#employees-by-class-rarity-all').change(function() {
+      $('.employees-by-class-rarity').prop('checked', $(this).prop('checked'));
+      loadEmployeesByClass();
+    });
   }
 
   function loadEmployeesByClass() {
