@@ -285,6 +285,12 @@
         "maxStats0": { "_str": 331, "_vit": 299, "_agi": 248, "_dex": 235, "_int": 271, "_pie": 160, "_luk": 172},
         "maxStats1": { "_str": 487, "_vit": 442, "_agi": 358, "_dex": 351, "_int": 399, "_pie": 255, "_luk": 261},
         "maxStats2": { "_str": 648, "_vit": 594, "_agi": 485, "_dex": 465, "_int": 547, "_pie": 341, "_luk": 351}
+    },{
+        "_no": "EX008", "_id": "10149001_fbee4da6", "fullName": "[Magic Knight] Monique Waroquier", "japaneseName": "[魔騎士]モニク・ワロキエ", "commonNames": ["Ex Monique", "Monique Ex"], "height": 0, "cwId": 1,
+        "baseStats": { "_str": 18, "_vit": 18, "_agi": 13, "_dex": 12, "_int": 12, "_pie": 1, "_luk": 1},
+        "maxStats0": { "_str": 331, "_vit": 299, "_agi": 248, "_dex": 235, "_int": 271, "_pie": 160, "_luk": 172},
+        "maxStats1": { "_str": 487, "_vit": 442, "_agi": 358, "_dex": 351, "_int": 399, "_pie": 255, "_luk": 261},
+        "maxStats2": { "_str": 648, "_vit": 594, "_agi": 485, "_dex": 465, "_int": 547, "_pie": 341, "_luk": 351}
     },
 
     {
@@ -755,6 +761,12 @@
         "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
     },{
         "_no": "165", "_id": "10230010_1c33e231", "fullName": "Recca Kujo", "japaneseName": "レッカ・クジョウ", "commonNames": ["Recca"], "height": 152, "cwId": 22,
+        "baseStats": { "_str": 17, "_vit": 7, "_agi": 13, "_dex": 9, "_int": 2, "_pie": 2, "_luk": 4},
+        "maxStats0": { "_str": 359, "_vit": 245, "_agi": 328, "_dex": 253, "_int": 149, "_pie": 158, "_luk": 205},
+        "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
+        "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
+    },{
+        "_no": "228", "_id": "10230011_83e961af", "fullName": "Lunaria Lem", "japaneseName": "ルナリア・レム", "commonNames": ["Lunaria"], "height": 0, "cwId": 0,
         "baseStats": { "_str": 17, "_vit": 7, "_agi": 13, "_dex": 9, "_int": 2, "_pie": 2, "_luk": 4},
         "maxStats0": { "_str": 359, "_vit": 245, "_agi": 328, "_dex": 253, "_int": 149, "_pie": 158, "_luk": 205},
         "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
