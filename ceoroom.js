@@ -22,6 +22,14 @@
     }
   }
 
+  function hasVoiceStone(chara) {
+    if (typeof chara.voices == 'undefined') return false;
+    for(var i=0;i<chara.voices.length;i++) {
+      if (chara.voices[i] == 'v016') return true;
+    }
+    return false;
+  }
+
   function initCatalog() {
     //console.log(KTPlayerManager.card_book);
     var characters = KTCharacterManager.characters;
@@ -35,20 +43,18 @@
       var id = characters[i]._id;
       var characterClass = classIdToClassName(id.charAt(2));
       var characterRarity = id.charAt(3);
-
+      var name = KTCharacterManager.getEmployeeName(id);
+      
       var imageClass = '';
-      var hasVoiceStone = false;
+      var hasVS = false;
       if (!userId || (typeof KTPlayerManager.card_book[userId] == 'undefined')  || (typeof KTPlayerManager.card_book[userId][id] == 'undefined')) {
         imageClass = 'class="gray-image"';
       } else {
         getCount++;
-        //hasVoiceStone = KTPlayerManager.card_book[userId][id].has_voice;
-        //console.log(hasVoiceStone);
+        hasVS = hasVoiceStone(KTPlayerManager.card_book[userId][id]);
       }
-      
-      var name = KTCharacterManager.getEmployeeName(id);
-
-      var image = '<div class="catalogs-character"><img ' + imageClass + ' src="http://67.205.150.236/storage/thumbnail/' + id + '.png" title="' + name + '"><img class="catalogs-vs" src="./assets/voice_stone.png" ' + (hasVoiceStone?'':'hidden') + '></div>';
+        
+      var image = '<div class="catalogs-character"><img ' + imageClass + ' src="http://67.205.150.236/storage/thumbnail/' + id + '.png" title="' + name + '"><img class="catalogs-vs" src="./assets/voice_stone.png" ' + (hasVS?'':'hidden') + '></div>';
       $('#catalog-' + characterClass + '-' + characterRarity).append(image);
     }
     $('#catalog-total').text('Total: ' + getCount + '/' + characters.length);
