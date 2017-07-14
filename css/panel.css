@@ -473,6 +473,15 @@
     color: #eee;
 }
 
+.employee-height {
+    position: absolute;
+    bottom: -2px;
+    right: 0px;
+    font-size: 14px;
+    font-style: italic;
+    color: #3cf;
+}
+
 .employee-awaken {
     position: absolute;
     top: 16px;

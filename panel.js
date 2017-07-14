@@ -192,12 +192,16 @@
       $('.employee-policy').hide();
       $('.employee-current-exp-container').hide();
       $('.employee-remain-exp-container').hide();
+      $('.employee-height').hide();
+
       if (type == 'strategy') {
         $('.employee-policy').show();
       } else if (type == 'current-exp') {
         $('.employee-current-exp-container').show();
       } else if (type == 'remain-exp') {
         $('.employee-remain-exp-container').show();
+      } else if (type == 'height') {
+        $('.employee-height').show();
       }
       KTConfigManager.setEmployeesTabAdditionalInfo(type);
       KTConfigManager.saveToLocalStorage();
