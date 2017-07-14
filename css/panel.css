@@ -717,6 +717,21 @@
     left: 135px;
 }
 
+#raid-accessory {
+    position: absolute;
+    top: 198px;
+    left: 135px;
+}
+
+#raid-accessory-total {
+    position: absolute;
+    top: 15px;
+    left: 85px;
+    color: #111;
+    font-size: 20px;
+    width: 60px;
+}
+
 .battle-team-slot {
     width: 90px;
     height: 59px;
