@@ -734,10 +734,10 @@
 
 #raid-accessory-total {
     position: absolute;
-    top: 15px;
+    top: 5px;
     left: 85px;
     color: #111;
-    font-size: 20px;
+    font-size: 18px;
     width: 60px;
 }
 
