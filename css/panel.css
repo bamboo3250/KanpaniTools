@@ -436,6 +436,7 @@
     font-size: 11px;
     z-index: 1;
     color: #eee;
+    white-space: nowrap;
 }
 
 .employee-current-exp {
@@ -471,6 +472,7 @@
     font-size: 11px;
     z-index: 1;
     color: #eee;
+    white-space: nowrap;
 }
 
 .employee-height {
