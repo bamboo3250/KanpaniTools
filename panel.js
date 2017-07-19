@@ -74,6 +74,15 @@
       }, 1000);
     });
 
+    $('#news-tab-btn').click(function() {
+      $('.tab-btn').removeClass('tab-active-btn');
+      $(this).addClass('tab-active-btn');
+
+      $('.tab-content-panel').hide();
+      $('#news-tab-panel').show();
+      GA.click('Show News tab');
+    });
+
     $('#quest-log-tab-btn').click(function() {
       $('.tab-btn').removeClass('tab-active-btn');
       $(this).addClass('tab-active-btn');
@@ -205,6 +214,17 @@
       }
       KTConfigManager.setEmployeesTabAdditionalInfo(type);
       KTConfigManager.saveToLocalStorage();
+    });
+
+    $('#include-in-news-checkbox').change(function() {
+      KTConfigManager.setIncludeInNews($(this).prop('checked'));
+      KTConfigManager.saveToLocalStorage();
+    });
+
+    $('#news-refresh-select').change(function() {
+      KTConfigManager.setNewsRefreshInterval($(this).val());
+      KTConfigManager.saveToLocalStorage();
+      Kanpani.initFetchGameLog();
     });
   });
 })();
