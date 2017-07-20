@@ -3,7 +3,7 @@
   "name": "KanpaniTools",
   "short_name": "KanpaniTools",
   "description": "Kanpani Girls Helper",
-  "version": "1.9.0",
+  "version": "1.9.1",
 
   "devtools_page": "devtools.html",
   "browser_action": {
