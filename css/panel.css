@@ -192,26 +192,27 @@
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 25px;
+    height: 40px;
 }
 
-#include-in-news-control {
+#left-group-news-control {
     position: absolute;
     top: 0px;
     left: 0px;
     margin: 5px;
 }
 
-#refresh-news-control {
+#right-group-news-control {
     position: absolute;
     top: 0px;
     right: 0px;
     margin: 5px;
+    text-align: right;
 }
 
 #news-content {
     position: absolute;
-    top: 25px;
+    top: 40px;
     left: 0px;
     right: 0px;
     bottom: 0px;

@@ -226,5 +226,11 @@
       KTConfigManager.saveToLocalStorage();
       Kanpani.initFetchGameLog();
     });
+
+    $('#news-order-select').change(function() {
+      KTConfigManager.setNewsOrder($(this).val());
+      KTConfigManager.saveToLocalStorage();
+      KTUIManager.refreshNews();
+    });
   });
 })();

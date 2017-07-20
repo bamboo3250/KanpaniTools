@@ -67,19 +67,25 @@
         
         <div class="tab-content-panel" id="news-tab-panel">
             <div id="news-control">
-                <div id="include-in-news-control">
+                <div id="left-group-news-control">
                     <input id="include-in-news-checkbox" type="checkbox" checked> Include me in <b>News</b>
                 </div>
-                <div id="refresh-news-control">
+                <div id="right-group-news-control">
                     Refresh Interval
                     <select id="news-refresh-select">
-                        <option value="5" selected>5s</option>
+                        <option value="5">5s</option>
                         <option value="10" selected>10s</option>
-                        <option value="15" selected>15s</option>
-                        <option value="20" selected>20s</option>
-                        <option value="30" selected>30s</option>
-                        <option value="60" selected>60s</option>
-                        <option value="-1" selected>Never</option>
+                        <option value="15">15s</option>
+                        <option value="20">20s</option>
+                        <option value="30">30s</option>
+                        <option value="60">60s</option>
+                        <option value="-1">Never</option>
+                    </select><br>
+                    News Order
+                    <select id="news-order-select">
+                        <option value="newest-top" selected>Newest Top</option>
+                        <option value="newest-bottom">Newest Bottom</option>
+                        
                     </select>
                 </div>
             </div>
