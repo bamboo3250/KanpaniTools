@@ -231,6 +231,28 @@
     width: 40px;
 }
 
+.player-41-50 {
+    color: #0aa;
+}
+
+.player-51-60 {
+    color: #0a0;
+}
+
+.player-61-70 {
+    color: #aa0;
+}
+
+.player-71-80 {
+    color: #a0a;
+}
+
+.player-81 {
+    color: #e00;
+}
+
+
+
 /* ================================= DIALOGUES TAB ================================= */
 
 #quest-log {
