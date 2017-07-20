@@ -145,6 +145,7 @@
     right: 5px;
     display: inline-block;
     height: 15px;
+    white-space: nowrap;
 }
 
 .tab-content-panel {
