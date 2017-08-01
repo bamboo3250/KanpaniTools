@@ -8,7 +8,7 @@
 <body>
 <div id="container">
     <div id="player-info-panel">
-        <div id="player-name">Company</div>
+        <div id="player-name"><span id="COMPANY_NAME_HOLDER"></span></div>
         <!--div id="cookies-hack-container"><a class="btn" id="cookies-hack">Set Cookies</a></div-->
         <div id="item-effects-container"></div>
         <div id="resources">
@@ -57,12 +57,12 @@
 
     <div id="tab-panel">
         <div id="tab-button-group">
-            <a class="btn tab-btn tab-active-btn" id="news-tab-btn">News</a>
-            <a class="btn tab-btn" id="employees-tab-btn">Employees</a>
-            <a class="btn tab-btn" id="teams-tab-btn">Teams</a>
-            <a class="btn tab-btn" id="battle-tab-btn">Battle</a>
-            <a class="btn tab-btn" id="quest-log-tab-btn">Dialogues</a>
-            <a class="btn tab-btn" id="settings-tab-btn">Settings</a>
+            <a class="btn tab-btn tab-active-btn" id="news-tab-btn"><span id="TAB_BUTTON_TITLE_NEWS"></span></a>
+            <a class="btn tab-btn" id="employees-tab-btn"><span id="TAB_BUTTON_TITLE_EMPLOYEES"></span></a>
+            <a class="btn tab-btn" id="teams-tab-btn"><span id="TAB_BUTTON_TITLE_TEAMS"></span></a>
+            <a class="btn tab-btn" id="battle-tab-btn"><span id="TAB_BUTTON_TITLE_BATTLE"></span></a>
+            <a class="btn tab-btn" id="quest-log-tab-btn"><span id="TAB_BUTTON_TITLE_DIALOGUES"></span></a>
+            <a class="btn tab-btn" id="settings-tab-btn"><span id="TAB_BUTTON_TITLE_SETTINGS"></span></a>
         </div>
         
         <div class="tab-content-panel" id="news-tab-panel">
@@ -700,6 +700,13 @@
                 <a class="btn" id="cookies-hack">Set Cookies</a><br-->
                 
                 <h3>General</h3>
+                Language
+                <select id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="jp">日本語</option>
+                </select><br>
+
+
                 Show Strategy Type 
                 <select id="strategy-type-select">
                     <option value="normal" selected>Normal Battle</option>

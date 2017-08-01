@@ -232,5 +232,12 @@
       KTConfigManager.saveToLocalStorage();
       KTUIManager.refreshNews();
     });
+
+    $('#language-select').change(function() {
+      var lang = $(this).val();
+      KTConfigManager.setLanguage(lang);
+      KTConfigManager.saveToLocalStorage();
+      KTUIManager.changeLanguage(lang);
+    });
   });
 })();
