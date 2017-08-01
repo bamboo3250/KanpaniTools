@@ -87,7 +87,10 @@
   function loadEmployeePanel(card, type, callback) {
     var employeePanel = $('#employee-panel-template').clone();
     var id = card.img_dir;
-    var name = trim(KTCharacterManager.getEmployeeName(id), 8);
+    var name = card.card_name;
+    var engName = KTCharacterManager.getEmployeeName(id);
+    if (engName) name = engName;
+    name = trim(name, 8);
 
     employeePanel.find('.employee-thumbnail').attr('src', 'http://67.205.150.236/storage/thumbnail/' + id + '.png');
     employeePanel.find('.employee-name').text(name);
