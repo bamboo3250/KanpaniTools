@@ -237,9 +237,11 @@
       var lang = $(this).val();
       KTConfigManager.setLanguage(lang);
       KTConfigManager.saveToLocalStorage();
-      KTUIManager.changeLanguage(lang);
-      var cardList = KTPlayerManager.getCardList();
-      KTUIManager.updateEmployeeList(cardList);                                  
+      KTUIManager.changeLanguage(lang, function() {
+        var cardList = KTPlayerManager.getCardList();
+        KTUIManager.updateEmployeeList(cardList);
+        KTUIManager.updateAllTeams();
+      });
     });
   });
 })();
