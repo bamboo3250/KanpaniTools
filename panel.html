@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/panel.css">
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
@@ -19,7 +19,7 @@
                 <div class="res-timer" id="timer-wood">0:00:00</div>
                 <div class="res-raw" id="res-raw-wood">
                     <span class="current-raw">STR: 0</span><br>
-                    <span class="required-raw" hidden>Req: 0</span>
+                    <span class="required-raw" hidden><span id="RESOURCE_REQUIRED"></span>: 0</span>
                 </div>
             </div>
             <div class="resource" id="player-food">
@@ -29,7 +29,7 @@
                 <div class="res-timer" id="timer-food">0:00:00</div>
                 <div class="res-raw" id="res-raw-food">
                     <span class="current-raw">INT: 0</span><br>
-                    <span class="required-raw" hidden>Req: 0</span>
+                    <span class="required-raw" hidden><span id="RESOURCE_REQUIRED"></span>: 0</span>
                 </div>
             </div>
             <div class="resource" id="player-iron">
@@ -39,7 +39,7 @@
                 <div class="res-timer" id="timer-iron">0:00:00</div>
                 <div class="res-raw" id="res-raw-iron">
                     <span class="current-raw">STR: 0</span><br>
-                    <span class="required-raw" hidden>Req: 0</span>
+                    <span class="required-raw" hidden><span id="RESOURCE_REQUIRED"></span>: 0</span>
                 </div>
             </div>
             <div class="resource" id="player-stone">
@@ -49,7 +49,7 @@
                 <div class="res-timer" id="timer-stone">0:00:00</div>
                 <div class="res-raw" id="res-raw-stone">
                     <span class="current-raw">STR: 0</span><br>
-                    <span class="required-raw" hidden>Req: 0</span>
+                    <span class="required-raw" hidden><span id="RESOURCE_REQUIRED"></span>: 0</span>
                 </div>
             </div>
         </div>
@@ -61,31 +61,31 @@
             <a class="btn tab-btn" id="employees-tab-btn"><span id="TAB_BUTTON_TITLE_EMPLOYEES"></span></a>
             <a class="btn tab-btn" id="teams-tab-btn"><span id="TAB_BUTTON_TITLE_TEAMS"></span></a>
             <a class="btn tab-btn" id="battle-tab-btn"><span id="TAB_BUTTON_TITLE_BATTLE"></span></a>
-            <a class="btn tab-btn" id="quest-log-tab-btn"><span id="TAB_BUTTON_TITLE_DIALOGUES"></span></a>
+            <a class="btn tab-btn" id="quest-log-tab-btn"><span id="TAB_BUTTON_TITLE_DIALOGUE"></span></a>
             <a class="btn tab-btn" id="settings-tab-btn"><span id="TAB_BUTTON_TITLE_SETTINGS"></span></a>
         </div>
         
         <div class="tab-content-panel" id="news-tab-panel">
             <div id="news-control">
                 <div id="left-group-news-control">
-                    <input id="include-in-news-checkbox" type="checkbox" checked> Include me in <b>News</b>
+                    <input id="include-in-news-checkbox" type="checkbox" checked>
+                    <span id="NEWS_INCLUDE_ME_IN_NEWS"></span>
                 </div>
                 <div id="right-group-news-control">
-                    Refresh Interval
+                    <span id="NEWS_REFRESH_INTERVAL"> </span>
                     <select id="news-refresh-select">
-                        <option value="5">5s</option>
-                        <option value="10" selected>10s</option>
-                        <option value="15">15s</option>
-                        <option value="20">20s</option>
-                        <option value="30">30s</option>
-                        <option value="60">60s</option>
-                        <option value="-1">Never</option>
+                        <option id="NEWS_REFRESH_INTERVAL_5_SECONDS" value="5"></option>
+                        <option id="NEWS_REFRESH_INTERVAL_10_SECONDS" value="10" selected></option>
+                        <option id="NEWS_REFRESH_INTERVAL_15_SECONDS" value="15"></option>
+                        <option id="NEWS_REFRESH_INTERVAL_20_SECONDS" value="20"></option>
+                        <option id="NEWS_REFRESH_INTERVAL_30_SECONDS" value="30"></option>
+                        <option id="NEWS_REFRESH_INTERVAL_60_SECONDS" value="60"></option>
+                        <option id="NEWS_REFRESH_INTERVAL_NEVER" value="-1"></option>
                     </select><br>
-                    News Order
+                    <span id="NEWS_NEWS_ORDER"></span>
                     <select id="news-order-select">
-                        <option value="newest-top" selected>Newest Top</option>
-                        <option value="newest-bottom">Newest Bottom</option>
-                        
+                        <option id="NEWS_NEWSEST_TOP" value="newest-top" selected></option>
+                        <option id="NEWS_NEWSEST_BOTTOM" value="newest-bottom"></option>
                     </select>
                 </div>
             </div>
@@ -95,23 +95,23 @@
         <div class="tab-content-panel" id="employees-tab-panel" hidden>
             <div id="employee-filter">
                 <div id="sort-btn-group">
-                    Sort By 
+                    <span id="EMPLOYEES_SORT_BY"></span>
                     <select class="employees-filter-widget" id="sort-select">
-                        <option value="highest-rarity" selected>Highest Rarity</option>
-                        <option value="lowest-rarity">Lowest Rarity</option>
-                        <option value="highest-level">Highest Level</option>
-                        <option value="lowest-level">Lowest Level</option>
-                        <option value="assignment">Assignment</option>
-                        <option value="class">Class</option>
-                        <option value="name">Name</option>
-                        <option value="normal-strategy">Normal Strategy</option>
-                        <option value="raid-strategy">Raid Strategy</option>
-                        <option value="height">Height</option>
+                        <option id="EMPLOYEES_SORT_BY_HIGHEST_RARITY" value="highest-rarity" selected></option>
+                        <option id="EMPLOYEES_SORT_BY_LOWEST_RARITY" value="lowest-rarity"></option>
+                        <option id="EMPLOYEES_SORT_BY_HIGHEST_LEVEL" value="highest-level"></option>
+                        <option id="EMPLOYEES_SORT_BY_LOWEST_LEVEL" value="lowest-level"></option>
+                        <option id="EMPLOYEES_SORT_BY_ASSIGNMENT" value="assignment"></option>
+                        <option id="EMPLOYEES_SORT_BY_CLASS" value="class"></option>
+                        <option id="EMPLOYEES_SORT_BY_NAME" value="name"></option>
+                        <option id="EMPLOYEES_SORT_BY_NORMAL_STRATEGY" value="normal-strategy"></option>
+                        <option id="EMPLOYEES_SORT_BY_RAID_STRATEGY" value="raid-strategy"></option>
+                        <option id="EMPLOYEES_SORT_BY_HEIGHT" value="height"></option>
                         <option value="hp">HP</option>
-                        <option value="patk">P.ATK</option>
-                        <option value="pdef">P.DEF</option>
-                        <option value="matk">M.ATK</option>
-                        <option value="mdef">M.DEF</option>
+                        <option id="EMPLOYEES_PATK" value="patk"></option>
+                        <option id="EMPLOYEES_PDEF" value="pdef"></option>
+                        <option id="EMPLOYEES_MATK" value="matk"></option>
+                        <option id="EMPLOYEES_MDEF" value="mdef"></option>
                         <option value="str">STR</option>
                         <option value="vit">VIT</option>
                         <option value="int">INT</option>
@@ -122,11 +122,11 @@
                     </select>
                 </div>
                 <div id="expand-collapse-group">
-                    <a class="btn" id="expand-btn">Expand All</a>
-                    <a class="btn" id="collapse-btn">Collapse All</a>
+                    <a class="btn" id="expand-btn"><span id="EMPLOYEES_EXPAND_ALL"></span></a>
+                    <a class="btn" id="collapse-btn"><span id="EMPLOYEES_COLLAPSE_ALL"></span></a>
                 </div>
                 <div id="class-btn-group">
-                    <input class="employees-filter-widget" id="all-class-check" type="checkbox" checked>All
+                    <input class="employees-filter-widget" id="all-class-check" type="checkbox" checked><span id="EMPLOYEES_FILTER_ALL"></span>
                     <input class="class-check employees-filter-widget" id="fighter-check" type="checkbox" checked><img src="assets/101.jpg">
                     <input class="class-check employees-filter-widget" id="ronin-check" type="checkbox" checked><img src="assets/102.jpg">
                     <input class="class-check employees-filter-widget" id="archer-check" type="checkbox" checked><img src="assets/103.jpg">
@@ -137,7 +137,7 @@
                     <input class="class-check employees-filter-widget" id="mage-check" type="checkbox" checked><img src="assets/108.jpg">
                 </div>
             </div>
-            <div id="employee-list">It's empty here!<br>Please go to Employees page in your game.</div>
+            <div id="employee-list"><span id="EMPLOYEES_EMPTY_LIST"></span></div>
             <div class="employee-panel" id="employee-template" hidden>
                 <div class="employee-assignment"></div>
                 <div class="employee-general">
@@ -196,39 +196,39 @@
                         <tr>
                             <td><img class="stats-icon" src="assets/pdef.png"> <span class="stats-value employee-pdef">0</span></td>
                             <td><img class="stats-icon" src="assets/mdef.png"> <span class="stats-value employee-mdef">0</span></td>
-                            <td class="hidden-stats">ACC <span class="stats-value employee-hit">0</span></td>
-                            <td class="hidden-stats">CRIT <span class="stats-value employee-crit">0</span></td>
-                            <td class="hidden-stats">EVA <span class="stats-value employee-eva">0</span></td>
+                            <td class="hidden-stats"><span id="EMPLOYEES_ACCURACY"></span> <span class="stats-value employee-hit">0</span></td>
+                            <td class="hidden-stats"><span id="EMPLOYEES_CRITICAL"></span> <span class="stats-value employee-crit">0</span></td>
+                            <td class="hidden-stats"><span id="EMPLOYEES_EVASION"></span> <span class="stats-value employee-eva">0</span></td>
                             <td></td>
                         </tr>
                     </table>
                     <table class="skill-table">
                         <tr class="front-skill">
-                            <th>Front</th>
-                            <td class="skill-name">Front Skill's name</td>
-                            <td class="skill-details"><font color="#c00"><i>Re-equip weapon</i></font></td>
+                            <th><span id="EMPLOYEES_FRONT_SKILL"></span></th>
+                            <td class="skill-name"><span id="EMPLOYEES_FRONT_SKILL_NAME_HOLDER"></span></td>
+                            <td class="skill-details"><font color="#c00"><i><span id="EMPLOYEES_RE_EQUIP_WEAPON"></span></i></font></td>
                         </tr>
                         <tr class="back-skill">
-                            <th>Back</th>
-                            <td class="skill-name">Back Skill's name</td>
-                            <td class="skill-details"><font color="#c00"><i>Re-equip weapon</i></font></td>
+                            <th><span id="EMPLOYEES_BACK_SKILL"></span></th>
+                            <td class="skill-name"><span id="EMPLOYEES_BACK_SKILL_NAME_HOLDER"></span></td>
+                            <td class="skill-details"><font color="#c00"><i><span id="EMPLOYEES_RE_EQUIP_WEAPON"></span></i></font></td>
                         </tr>
                     </table>
                 </div>
                 <div class="equipment-details" hidden>
                     <table class="stats-table">
                         <tr>
-                            <th colspan="5">Name: <span class="stats-value equip-name">Equipment +0</span> <img class="equip-attribute" src=""></th>
+                            <th colspan="5"><span id="EMPLOYEES_EQUIPMENT_NAME"></span>: <span class="stats-value equip-name"></span> <img class="equip-attribute" src=""></th>
                         </tr>
                         <tr>
-                            <th colspan="5">Description: <span class="stats-value equip-description"></span></th>
+                            <th colspan="5"><span id="EMPLOYEES_EQUIPMENT_DESC"></span>: <span class="stats-value equip-description"></span></th>
                         </tr>
                         <tr>
                             <td><img class="stats-icon" src="assets/patk.png"> <span class="stats-value equip-patk">0</span></td>
                             <td><img class="stats-icon" src="assets/matk.png"> <span class="stats-value equip-matk">0</span></td>
-                            <td>ACC <span class="stats-value equip-hit">0</span></td>
-                            <td>CRIT <span class="stats-value equip-crit">0</span></td>
-                            <td>EVA <span class="stats-value equip-eva">0</span></td>
+                            <td><span id="EMPLOYEES_ACCURACY"></span> <span class="stats-value equip-hit">0</span></td>
+                            <td><span id="EMPLOYEES_CRITICAL"></span> <span class="stats-value equip-crit">0</span></td>
+                            <td><span id="EMPLOYEES_EVASION"></span> <span class="stats-value equip-eva">0</span></td>
                         </tr>
                         <tr>
                             <td><img class="stats-icon" src="assets/pdef.png"> <span class="stats-value equip-pdef">0</span></td>
@@ -247,7 +247,7 @@
         
         <div class="tab-content-panel" id="teams-tab-panel" hidden>
             <div class="team-panel" id="team-panel-0">
-                <div class="team-name">Team 1</div>
+                <div class="team-name"><span id="TEAMS_TEAM_1_NAME"</span></div>
                 <div class="team-container">
                     <div class="team-slot team-slot-0">
                         <img src="" class="team-employee-thumbnail">
@@ -290,7 +290,7 @@
                 <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-1">
-                <div class="team-name">Team 2</div>
+                <div class="team-name"><span id="TEAMS_TEAM_2_NAME"</span></div>
                 <div class="team-container">
                     <div class="team-slot team-slot-0">
                         <img src="" class="team-employee-thumbnail">
@@ -333,7 +333,7 @@
                 <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-2">
-                <div class="team-name">Team 3</div>
+                <div class="team-name"><span id="TEAMS_TEAM_3_NAME"</span></div>
                 <div class="team-container">
                     <div class="team-slot team-slot-0">
                         <img src="" class="team-employee-thumbnail">
@@ -376,7 +376,7 @@
                 <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-3">
-                <div class="team-name">Team 4</div>
+                <div class="team-name"><span id="TEAMS_TEAM_4_NAME"</span></div>
                 <div class="team-container">
                     <div class="team-slot team-slot-0">
                         <img src="" class="team-employee-thumbnail">
@@ -419,7 +419,7 @@
                 <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-4">
-                <div class="team-name">Team 5</div>
+                <div class="team-name"><span id="TEAMS_TEAM_5_NAME"</span></div>
                 <div class="team-container">
                     <div class="team-slot team-slot-0">
                         <img src="" class="team-employee-thumbnail">
@@ -462,7 +462,7 @@
                 <div class="team-policy team-raid-policy" hidden></div>
             </div>
             <div class="team-panel" id="team-panel-5">
-                <div class="team-name">Team 6</div>
+                <div class="team-name"><span id="TEAMS_TEAM_6_NAME"</span></div>
                 <div class="team-container">
                     <div class="team-slot team-slot-0">
                         <img src="" class="team-employee-thumbnail">
@@ -508,7 +508,7 @@
 
         <div class="tab-content-panel" id="battle-tab-panel" hidden>
             <div class="battle-team-panel" id="enemy-team-panel">
-                <div class="team-name">ENEMY</div>
+                <div class="team-name"><span id="BATTLE_TEAM_ENEMY_NAME"></span></div>
                 <div class="team-container">
                     <div class="battle-team-slot battle-team-slot-0">
                         <div class="battle-hp-container">
@@ -593,7 +593,7 @@
                 <div class="battle-policy battle-raid-policy"></div>
             </div>
             <div class="battle-team-panel" id="ally-team-panel">
-                <div class="team-name">YOUR TEAM</div>
+                <div class="team-name"><span id="BATTLE_TEAM_YOUR_TEAM_NAME"></span></div>
                 <div class="team-container">
                     <div class="battle-team-slot battle-team-slot-0">
                         <div class="battle-hp-container">
@@ -688,9 +688,9 @@
         <div class="tab-content-panel" id="quest-log-tab-panel" hidden>
             <div id="quest-log"></div>
             <div id="quest-log-btn-group">
-                <a class="btn copy-btn" id="copy-quest-log-btn" data-clipboard-target="#quest-log">Copy</a>
-                <a class="btn" id="translate-btn">Translate</a>
-                <a class="btn danger-btn" id="clear-quest-log-btn">Clear</a>
+                <a class="btn copy-btn" id="copy-quest-log-btn" data-clipboard-target="#quest-log"><span id="DIALOGUES_BUTTON_COPY"></span></a>
+                <a class="btn" id="translate-btn"><span id="DIALOGUES_BUTTON_TRANSLATE"></span></a>
+                <a class="btn danger-btn" id="clear-quest-log-btn"><span id="DIALOGUES_BUTTON_CLEAR"></span></a>
             </div>
         </div>
 
@@ -699,27 +699,27 @@
                 <!--h3>Utilities</h3>
                 <a class="btn" id="cookies-hack">Set Cookies</a><br-->
                 
-                <h3>General</h3>
-                Language
+                <h3><span id="SETTINGS_SECTION_GENERAL"></span></h3>
+                <span id="SETTINGS_ITEM_LANGUAGE"></span>
                 <select id="language-select">
                     <option value="en" selected>English</option>
                     <option value="jp">日本語</option>
                 </select><br>
 
 
-                Show Strategy Type 
+                <span id="SETTINGS_ITEM_SHOW_STRATEGY_TYPE"></span> 
                 <select id="strategy-type-select">
-                    <option value="normal" selected>Normal Battle</option>
-                    <option value="raid">Raid Boss</option>
+                    <option id="SETTINGS_SELECT_ITEM_NORMAL_BATTLE" value="normal" selected></option>
+                    <option id="SETTINGS_SELECT_ITEM_RAID_BOSS" value="raid"></option>
                 </select><br>
 
-                <h3>Employees Tab</h3>
-                Additional Info
+                <h3><span id="SETTINGS_SECTION_EMPLOYEES_TAB"></span></h3>
+                <span id="SETTINGS_ITEM_ADDITIONAL_INFO"></span>
                 <select id="additional-info-select">
-                    <option value="strategy" selected>Strategy</option>
-                    <option value="current-exp">Current EXP</option>
-                    <option value="remain-exp">Remaining EXP</option>
-                    <option value="height">Height</option>
+                    <option id="SETTINGS_SELECT_ITEM_STRATEGY" value="strategy" selected></option>
+                    <option id="SETTINGS_SELECT_ITEM_CURRENT_EXP" value="current-exp"></option>
+                    <option id="SETTINGS_SELECT_ITEM_REMAINING_EXP" value="remain-exp"></option>
+                    <option id="SETTINGS_SELECT_ITEM_HEIGHT" value="height"></option>
                 </select><br>
             </div>
         </div>
@@ -729,7 +729,7 @@
         <div id="overlay-panel">
             <div id="overlay-panel-title"></div>
             <div id="overlay-panel-content"></div>
-            <div id="overlay-panel-buttons"><a class="btn" id="overlay-panel-close-btn">Close</a></div>
+            <div id="overlay-panel-buttons"><a class="btn" id="overlay-panel-close-btn"><span id="OVERLAY_CLOSE"></span></a></div>
         </div>
     </div>
 </div>

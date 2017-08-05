@@ -238,6 +238,8 @@
       KTConfigManager.setLanguage(lang);
       KTConfigManager.saveToLocalStorage();
       KTUIManager.changeLanguage(lang);
+      var cardList = KTPlayerManager.getCardList();
+      KTUIManager.updateEmployeeList(cardList);                                  
     });
   });
 })();
