@@ -476,10 +476,14 @@
 
 .employee-policy {
     position: absolute;
-    bottom: -2px;
+    bottom: -4px;
     right: 0px;
     font-size: 14px;
     font-style: italic;
+    width: 110px;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .employee-normal-policy {

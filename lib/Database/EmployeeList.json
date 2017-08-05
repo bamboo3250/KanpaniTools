@@ -55,6 +55,12 @@
         "maxStats0": { "_str": 398, "_vit": 273, "_agi": 367, "_dex": 301, "_int": 157, "_pie": 173, "_luk": 240},
         "maxStats1": { "_str": 521, "_vit": 372, "_agi": 506, "_dex": 414, "_int": 225, "_pie": 262, "_luk": 325},
         "maxStats2": { "_str": 912, "_vit": 674, "_agi": 874, "_dex": 730, "_int": 399, "_pie": 457, "_luk": 569}
+    },{
+        "_no": "229", "_id": "10250005_ede36d72", "fullName": "Rean Reinbell", "japaneseName": "リィン・リーンベル", "commonNames": ["Rean", "Reinbell"], "height": 0, "cwId": 0,
+        "baseStats": { "_str": 34, "_vit": 14, "_agi": 25, "_dex": 22, "_int": 6, "_pie": 3, "_luk": 10},
+        "maxStats0": { "_str": 398, "_vit": 273, "_agi": 367, "_dex": 301, "_int": 157, "_pie": 173, "_luk": 240},
+        "maxStats1": { "_str": 521, "_vit": 372, "_agi": 506, "_dex": 414, "_int": 225, "_pie": 262, "_luk": 325},
+        "maxStats2": { "_str": 912, "_vit": 674, "_agi": 874, "_dex": 730, "_int": 399, "_pie": 457, "_luk": 569}
     },
 
     {
@@ -491,6 +497,12 @@
         "maxStats0": { "_str": 473, "_vit": 277, "_agi": 225, "_dex": 160, "_int": 151, "_pie": 171, "_luk": 275},
         "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
         "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
+    },{
+        "_no": "230", "_id": "10540009_a7a08b97", "fullName": "Ellie Holderlin", "japaneseName": "エリィ・ヘルダーリン", "commonNames": ["Ellie"], "height": 0, "cwId": 0,
+        "baseStats": { "_str": 32, "_vit": 12, "_agi": 11, "_dex": 4, "_int": 2, "_pie": 13, "_luk": 2},
+        "maxStats0": { "_str": 473, "_vit": 277, "_agi": 225, "_dex": 160, "_int": 151, "_pie": 171, "_luk": 275},
+        "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
+        "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
     },
 
     {
@@ -835,6 +847,12 @@
         "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
     },{
         "_no": "224", "_id": "10330010_fb2e44a6", "fullName": "Lilua Shalulua", "japaneseName": "リルア・シャルルア", "commonNames": ["Lilua"], "height": 0, "cwId": 0,
+        "baseStats": { "_str": 5, "_vit": 3, "_agi": 15, "_dex": 20, "_int": 2, "_pie": 2, "_luk": 7},
+        "maxStats0": { "_str": 158, "_vit": 204, "_agi": 387, "_dex": 448, "_int": 157, "_pie": 158, "_luk": 159},
+        "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
+        "maxStats2": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0}
+    },{
+        "_no": "231", "_id": "10330011_64f4c738", "fullName": "Meicia Ghiglia", "japaneseName": "メイツィア・ギリア", "commonNames": ["Meicia"], "height": 0, "cwId": 0,
         "baseStats": { "_str": 5, "_vit": 3, "_agi": 15, "_dex": 20, "_int": 2, "_pie": 2, "_luk": 7},
         "maxStats0": { "_str": 158, "_vit": 204, "_agi": 387, "_dex": 448, "_int": 157, "_pie": 158, "_luk": 159},
         "maxStats1": { "_str": 0, "_vit": 0, "_agi": 0, "_dex": 0, "_int": 0, "_pie": 0, "_luk": 0},
