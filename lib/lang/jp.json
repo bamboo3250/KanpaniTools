@@ -133,6 +133,7 @@
     
     "SETTINGS_SECTION_GENERAL"          : "一般設定",
     "SETTINGS_ITEM_LANGUAGE"            : "言語",
+    "SETTINGS_ITEM_UI_LANGUAGE"         : "UI Language",
     "SETTINGS_ITEM_SHOW_STRATEGY_TYPE"  : "表示する作戦名",
     "SETTINGS_SELECT_ITEM_NORMAL_BATTLE": "普通作戦名",
     "SETTINGS_SELECT_ITEM_RAID_BOSS"    : "異世界の作戦名",

@@ -237,11 +237,14 @@
       var lang = $(this).val();
       KTConfigManager.setLanguage(lang);
       KTConfigManager.saveToLocalStorage();
-      KTUIManager.changeLanguage(lang, function() {
-        var cardList = KTPlayerManager.getCardList();
-        KTUIManager.updateEmployeeList(cardList);
-        KTUIManager.updateAllTeams();
-      });
+      KTUIManager.changeContentLanguage(lang);
+    });
+
+    $('#ui-language-select').change(function() {
+      var lang = $(this).val();
+      KTConfigManager.setUiLanguage(lang);
+      KTConfigManager.saveToLocalStorage();
+      KTUIManager.changeUiLanguage(lang);
     });
   });
 })();
