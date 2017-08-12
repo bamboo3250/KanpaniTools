@@ -132,7 +132,7 @@
     "DIALOGUES_FAIRY_NAME"              : "Ruka",
     
     "SETTINGS_SECTION_GENERAL"          : "General",
-    "SETTINGS_ITEM_LANGUAGE"            : "Language",
+    "SETTINGS_ITEM_LANGUAGE"            : "Content Language",
     "SETTINGS_ITEM_UI_LANGUAGE"         : "UI Language",
     "SETTINGS_ITEM_SHOW_STRATEGY_TYPE"  : "Show Strategy Type",
     "SETTINGS_SELECT_ITEM_NORMAL_BATTLE": "Normal Battle",
