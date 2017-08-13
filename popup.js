@@ -9,7 +9,7 @@
         
         $('#play_dmm').click(function() {
             GA.click('Play DMM clicked');
-            window.open('http://www.dmm.com/netgame/social/-/gadgets/=/app_id=181259/');
+            window.open('http://pc-play.games.dmm.com/play/kanpani/');
         });
 
         $('#ceo-room').click(function() {
