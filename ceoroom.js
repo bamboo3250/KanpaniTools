@@ -316,16 +316,6 @@
       var skillId = skill.skill_id + '';
       var classId = skillId.charAt(2);
       var skillType = skillId.charAt(3);
-
-      var rowText = '<td>' + skillId + '</td>';
-      rowText += '<td>' + skill.skill_name + '</td>';
-      if (skill.attribute > 0) {
-        rowText += '<td><img src="../../assets/attribute' + skill.attribute + '.png"></td>';  
-      } else {
-        rowText += '<td>None</td>';
-      }
-      rowText += '<td>' + KTUIManager.getSkillDetails(skill) + '</td>';
-
       if (skillType == '5' || skillType == '7' || skillType == '8') { //cw
         skillType = 'cw';
       } else if (skillType == '6' || skillType == '9') { //event
@@ -333,6 +323,29 @@
       } else {
         skillType = 'regular';
       }
+
+      var rowText = '<td>' + skillId + '</td>';
+      rowText += '<td>' + skill.skill_name + '</td>';
+      rowText += '<td>' + skill.en_name + '</td>';
+
+      if (skillType == 'cw') {
+        var text = '';
+        console.log(skill.exclusive);
+        if (skill.exclusive) {
+          text = '<img src="' + Kanpani.HOST + '/storage/thumbnail/' + skill.exclusive + '.png">'
+          text += ' <span>' + KTCharacterManager.getEmployeeName(skill.exclusive) + '</span>';
+        }
+        rowText += '<td>' + text + '</td>';        
+      }
+
+      if (skill.attribute > 0) {
+        rowText += '<td><img src="../../assets/attribute' + skill.attribute + '.png"></td>';  
+      } else {
+        rowText += '<td>None</td>';
+      }
+      rowText += '<td>' + KTUIManager.getSkillDetails(skill) + '</td>';
+
+      
 
       $('#skills-table-' + classId + '-' + skillType + ' tbody').append('<tr>' + rowText + '</tr>');
       total++;
