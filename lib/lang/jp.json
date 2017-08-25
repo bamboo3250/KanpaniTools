@@ -75,7 +75,7 @@
     "EMPLOYEES_SKILL_RANGE_TYPE_5"      : "全体",
     "EMPLOYEES_SKILL_RANGE_TYPE_14"     : "マルチタゲ2体",
     "EMPLOYEES_SKILL_RANGE_TYPE_15"     : "マルチタゲ3体",
-    "EMPLOYEES_SKILL_RANGE_TYPE_16"     : "マルチタゲ3体",
+    "EMPLOYEES_SKILL_RANGE_TYPE_16"     : "マルチタゲ4体",
     "EMPLOYEES_SKILL_RANGE_TYPE_19"     : "V形",
     "EMPLOYEES_POLICY_NAME_1"           : "リーダーをねらえ！",
     "EMPLOYEES_POLICY_DESC_1"           : "リーダー撃破後はランダムで敵を狙う。",
@@ -123,7 +123,8 @@
     "EMPLOYEES_POLICY_DESC_206"         : "回復行動を行う箇所を優先的に攻撃。",
     "EMPLOYEES_POLICY_NAME_207"         : "素早い攻撃をとめろ！",
     "EMPLOYEES_POLICY_DESC_207"         : "素早い攻撃をしてくる箇所を優先的に狙う。",
-    
+    "EMPLOYEES_EXP_NEXT"                : "次",
+
     "TEAMS_TEAM_1_NAME"                 : "第１部隊",
     "TEAMS_TEAM_2_NAME"                 : "第２部隊",
     "TEAMS_TEAM_3_NAME"                 : "第３部隊",
