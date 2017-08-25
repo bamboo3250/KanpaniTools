@@ -32,18 +32,18 @@
 
   function initCatalog() {
     //console.log(KTPlayerManager.card_book);
-    var characters = KTCharacterManager.characters;
+    var characterDict = KTGameDataManager.charaLibrary;
     var getCount = 0;
     var userId = null;
     if (KTPlayerManager.player) {
       userId = KTPlayerManager.player.status.user_id;
     }
 
-    for(var i=0;i<characters.length;i++) {
-      var id = characters[i]._id;
+    for(var charaId in characterDict) {
+      var id = charaId;
       var characterClass = classIdToClassName(id.charAt(2));
       var characterRarity = id.charAt(3);
-      var name = KTCharacterManager.getEmployeeName(id);
+      var name = KTGameDataManager.getEmployeeName(id);
       
       var imageClass = '';
       var hasVS = false;
@@ -57,7 +57,7 @@
       var image = '<div class="catalogs-character"><img ' + imageClass + ' src="http://67.205.150.236/storage/thumbnail/' + id + '.png" title="' + name + '"><img class="catalogs-vs" src="./assets/voice_stone.png" ' + (hasVS?'':'hidden') + '></div>';
       $('#catalog-' + characterClass + '-' + characterRarity).append(image);
     }
-    $('#catalog-total').text('Total: ' + getCount + '/' + characters.length);
+    $('#catalog-total').text('Total: ' + getCount + '/' + Object.keys(characterDict).length);
   }
 
   function trim(text, maxLength) {
@@ -88,7 +88,7 @@
     var employeePanel = $('#employee-panel-template').clone();
     var id = card.img_dir;
     var name = card.card_name;
-    var engName = KTCharacterManager.getEmployeeName(id);
+    var engName = KTGameDataManager.getEmployeeName(id);
     if (engName) name = engName;
     name = trim(name, 8);
 
@@ -333,7 +333,7 @@
         console.log(skill.exclusive);
         if (skill.exclusive) {
           text = '<img src="' + Kanpani.HOST + '/storage/thumbnail/' + skill.exclusive + '.png">'
-          text += ' <span>' + KTCharacterManager.getEmployeeName(skill.exclusive) + '</span>';
+          text += ' <span>' + KTGameDataManager.getEmployeeName(skill.exclusive) + '</span>';
         }
         rowText += '<td>' + text + '</td>';        
       }
