@@ -31,7 +31,6 @@
   }
 
   function initCatalog() {
-    //console.log(KTPlayerManager.card_book);
     var characterDict = KTGameDataManager.charaLibrary;
     var getCount = 0;
     var userId = null;
@@ -307,8 +306,6 @@
 
   function initSkills() {
     var skills = KTGameDataManager.skillLibrary;
-    //console.log(skills);
-    //skills.sort(sortyBySkillId);
 
     var total = 0;
     for(var key in skills) {
@@ -330,7 +327,6 @@
 
       if (skillType == 'cw') {
         var text = '';
-        console.log(skill.exclusive);
         if (skill.exclusive) {
           text = '<img src="' + Kanpani.HOST + '/storage/thumbnail/' + skill.exclusive + '.png">'
           text += ' <span>' + KTGameDataManager.getEmployeeName(skill.exclusive) + '</span>';
