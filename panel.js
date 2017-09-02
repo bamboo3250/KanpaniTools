@@ -246,5 +246,13 @@
       KTConfigManager.saveToLocalStorage();
       KTUIManager.changeUiLanguage(lang);
     });
+
+    $('#clear-storage-btn').click(function() {
+      chrome.storage.local.clear(function() {
+        chrome.storage.local.get(null, function(items) {
+            console.log(items);
+        });
+      });
+    });
   });
 })();

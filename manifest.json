@@ -22,10 +22,9 @@
   "permissions": [
     "storage",
     "unlimitedStorage",
-    "cookies",
     "tabs",
-    "http://67.205.150.236/",
-    "http://www.dmm.com/netgame/social/-/gadgets/=/app_id=181259/"
+    "activeTab"
+    "http://pc-play.games.dmm.com/play/kanpani/"
   ],
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
 }
