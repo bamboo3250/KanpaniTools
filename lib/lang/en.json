@@ -141,6 +141,8 @@
     "DIALOGUES_CEO_NAME"                : "CEO",
     "DIALOGUES_FAIRY_NAME"              : "Ruka",
     
+    "SETTINGS_SECTION_LOGIN"            : "Login",
+
     "SETTINGS_SECTION_GENERAL"          : "General",
     "SETTINGS_ITEM_LANGUAGE"            : "Content Language",
     "SETTINGS_ITEM_UI_LANGUAGE"         : "UI Language",

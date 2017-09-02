@@ -8,6 +8,10 @@
     }
   }
 
+  function logout() {
+    window.KTUIManager.logout();
+  }
+
   $(document).ready(function() {
     GA.pageView();
 
@@ -254,5 +258,39 @@
         });
       });
     });
+
+    $('#login-btn').click(function() {
+      $('#email').prop('disabled', true);
+      $('#password').prop('disabled', true);
+      $(this).prop('disabled', true);
+      $('#login-error').text('');  
+
+      $.post(Kanpani.HOST + '/connect', {
+        'email': $('#email').val(),
+        'password': $('#password').val()
+      }, function(response) {
+
+        if (response.code == 0) {
+          $('#login-error').text(response.data);  
+        } else {
+
+          var playerId = window.KTPlayerManager.getPlayerId();
+          window.KTPlayerManager.k_token[playerId] = response.data.k_token;
+          window.KTPlayerManager.k_username[playerId] = response.data.username;
+          window.KTPlayerManager.saveToLocalStorage();
+
+          $('#logged-in-user-info').html('You are now logged in as <b>' + response.data.username + '</b>.');
+          $('#login-table').hide();
+          $('#logged-in-user-section').show();
+        }
+
+        $('#email').prop('disabled', false);
+        $('#password').prop('disabled', false);
+        $(this).prop('disabled', false);
+      });
+    });
+
+    $('#logout-btn').click(logout);
+
   });
 })();

@@ -702,6 +702,27 @@
                 <!--h3>Utilities</h3>
                 <a class="btn" id="cookies-hack">Set Cookies</a><br-->
                 
+                <h3><span class="SETTINGS_SECTION_LOGIN">Login</span></h3>
+                <table id="login-table">
+                    <tr>
+                        <th><span class="SETTINGS_ITEM_EMAIL">Email</span>:</th><td><input type="text" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <th><span class="SETTINGS_ITEM_PASSWORD">Password</span>:</th><td><input type="password" id="password" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <span id="login-btn" class="btn SETTINGS_ITEM_LOGIN">Login</span>
+                            <span id="login-error"></span>
+                        </td>
+                    </tr>
+                </table>
+                <span id="logged-in-user-section" hidden>
+                    <span id="logged-in-user-info"></span>
+                    <span id="logout-btn" class="btn SETTINGS_ITEM_LOGOUT">Logout</span>
+                </span>
+
+
                 <h3><span class="SETTINGS_SECTION_GENERAL">General</span></h3>
                 <span class="SETTINGS_ITEM_LANGUAGE">Content Language</span>
                 <select id="language-select">
