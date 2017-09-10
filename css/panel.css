@@ -228,7 +228,7 @@
 }
 
 #player-news-content {
-    height: 100%;
+    width: calc(100% - 10px);
     overflow-y: scroll;
     padding: 5px;
 }
