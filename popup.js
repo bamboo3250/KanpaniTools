@@ -12,6 +12,11 @@
             window.open('http://pc-play.games.dmm.com/play/kanpani/');
         });
 
+        $('#kanpanitools-website').click(function() {
+            GA.click('Opened KanpaniTools Website');
+            window.open('https://kanpanitools.com');
+        });
+
         $('#ceo-room').click(function() {
             GA.click('Opened CEO Room');
             window.open('./ceoroom.html');

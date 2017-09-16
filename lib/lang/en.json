@@ -142,6 +142,7 @@
     "DIALOGUES_FAIRY_NAME"              : "Ruka",
     
     "SETTINGS_SECTION_LOGIN"            : "Login",
+    "SETTINGS_SECTION_REGISTER"         : "Register",
 
     "SETTINGS_SECTION_GENERAL"          : "General",
     "SETTINGS_ITEM_LANGUAGE"            : "Content Language",

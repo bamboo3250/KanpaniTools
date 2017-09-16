@@ -259,6 +259,10 @@
       });
     });
 
+    $('#register-btn').click(function() {
+      window.open(Kanpani.HOST + '/register')
+    });
+
     $('#login-btn').click(function() {
       $('#email').prop('disabled', true);
       $('#password').prop('disabled', true);
@@ -275,10 +279,12 @@
         } else {
 
           var playerId = window.KTPlayerManager.getPlayerId();
-          window.KTPlayerManager.k_token[playerId] = response.data.k_token;
-          window.KTPlayerManager.k_username[playerId] = response.data.username;
-          window.KTPlayerManager.saveToLocalStorage();
-
+          if (playerId) {
+            window.KTPlayerManager.k_token[playerId] = response.data.k_token;
+            window.KTPlayerManager.k_username[playerId] = response.data.username;
+            window.KTPlayerManager.saveToLocalStorage();
+          }
+          
           $('#logged-in-user-info').html('You are now logged in as <b>' + response.data.username + '</b>.');
           $('#login-table').hide();
           $('#logged-in-user-section').show();
