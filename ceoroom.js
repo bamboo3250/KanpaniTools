@@ -324,6 +324,7 @@
       var rowText = '<td>' + skillId + '</td>';
       rowText += '<td>' + skill.skill_name + '</td>';
       rowText += '<td>' + skill.en_name + '</td>';
+      rowText += '<td>' + skill.zh_name + '</td>';
 
       if (skillType == 'cw') {
         var text = '';
