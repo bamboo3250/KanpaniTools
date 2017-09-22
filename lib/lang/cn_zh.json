@@ -140,7 +140,10 @@
     "DIALOGUES_BUTTON_CLEAR"            : "清空",
     "DIALOGUES_CEO_NAME"                : "CEO",
     "DIALOGUES_FAIRY_NAME"              : "露卡",
-    
+
+    "SETTINGS_SECTION_LOGIN"            : "登录",
+    "SETTINGS_SECTION_REGISTER"         : "注册",
+
     "SETTINGS_SECTION_GENERAL"          : "通用",
     "SETTINGS_ITEM_LANGUAGE"            : "内容语言",
     "SETTINGS_ITEM_UI_LANGUAGE"         : "UI语言",
