@@ -508,7 +508,6 @@
     bottom: -4px;
     right: 0px;
     font-size: 14px;
-    font-style: italic;
     width: 110px;
     /* Required for text-overflow to do anything */
     white-space: nowrap;
@@ -654,6 +653,25 @@
     font-size: 14px;
 }
 
+.bonus-resist-table {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;    
+    width: 95%;
+    margin: 5px auto;
+}
+.bonus-table,
+.resist-table {
+    width: 100%;
+}
+.bonus-resist-table th,
+.bonus-resist-table td {
+    color: #eee;
+    width: 50%;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+
 /* ================================= TEAM TAB ================================= */
 
 .team-panel {
@@ -732,7 +750,6 @@
     text-align: center;
     font-size: 14px;
     color: #3cf;
-    font-style: italic;
 }
 
 .team-raid-policy {
@@ -1010,7 +1027,6 @@
     background-color: rgba(0,0,0,0.8);
     text-align: center;
     font-size: 14px;
-    font-style: italic;
 }
 
 .battle-normal-policy {

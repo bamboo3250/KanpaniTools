@@ -285,7 +285,8 @@
             window.KTPlayerManager.saveToLocalStorage();
           }
           
-          $('#logged-in-user-info').html('You are now logged in as <b>' + response.data.username + '</b>.');
+          var text = window.KTTranslationManager.getUITranslatedText('SETTINGS_LABEL_LOGIN_NOTICE').replace('{name}', response.data.username);
+          $('#logged-in-user-info').html(text);
           $('#login-table').hide();
           $('#logged-in-user-section').show();
         }
@@ -297,6 +298,5 @@
     });
 
     $('#logout-btn').click(logout);
-
   });
 })();
