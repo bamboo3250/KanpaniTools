@@ -672,6 +672,15 @@
     text-align: center;
 }
 
+.see-more-url {
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.see-more-url:hover {
+    font-weight: bold;
+}
+
 /* ================================= TEAM TAB ================================= */
 
 .team-panel {
