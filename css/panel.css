@@ -222,6 +222,7 @@
     font-size: 13px;
 }
 
+#dungeon-content,
 #schedule-content,
 #player-news-content {
     float: left;
@@ -233,6 +234,7 @@
     padding: 5px;
 }
 
+#dungeon-content,
 #schedule-content {
     width: 100%;
 }
@@ -251,7 +253,9 @@
 .schedule-item-goingon {
     background-color: #aa0;
 }
-
+.dungeon-item {
+    background-color: #a00;
+}
 
 .news-image {
     width: 20px;

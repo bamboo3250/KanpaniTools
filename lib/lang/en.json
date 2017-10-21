@@ -26,6 +26,8 @@
     "NEWS_NEWSEST_TOP"                  : "Newest Top",
     "NEWS_NEWSEST_BOTTOM"               : "Newest Bottom",
 
+    "SCHEDULE_DUNGEON_CAUTIOUS_ENEMY"   : "[Floating Continent] Caution Mode",
+
     "EMPLOYEES_SORT_BY"                     : "Sort by",
     "EMPLOYEES_SORT_BY_HIGHEST_RARITY"      : "Highest Rarity",
     "EMPLOYEES_SORT_BY_LOWEST_RARITY"       : "Lowest Rarity",
@@ -105,7 +107,6 @@
     "EMPLOYEES_SKILL_BUFF_TYPE_CRITICAL"    : "Critical",
     "EMPLOYEES_SKILL_BUFF_TYPE_EVASION"     : "Evasion",
     "EMPLOYEES_SKILL_BUFF_TYPE_PATTACK"     : "P.ATK",
-    
     
     "EMPLOYEES_SKILL_BUFF_TYPE_竜肺の奔流"   : "Dragon Torrent",
     "EMPLOYEES_SKILL_BUFF_TYPE_竜星"        : "Dragon Star",

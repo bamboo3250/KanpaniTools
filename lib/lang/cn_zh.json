@@ -26,6 +26,8 @@
     "NEWS_NEWSEST_TOP"                  : "顶部最新",
     "NEWS_NEWSEST_BOTTOM"               : "底部最新",
 
+    "SCHEDULE_DUNGEON_CAUTIOUS_ENEMY"   : "强敌预警",
+
     "EMPLOYEES_SORT_BY"                     : "排序",
     "EMPLOYEES_SORT_BY_HIGHEST_RARITY"      : "稀有度由高到低",
     "EMPLOYEES_SORT_BY_LOWEST_RARITY"       : "稀有度由低到高",

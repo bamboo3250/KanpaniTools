@@ -26,6 +26,8 @@
     "NEWS_NEWSEST_TOP"                  : "新しい順",
     "NEWS_NEWSEST_BOTTOM"               : "古い順",
 
+    "SCHEDULE_DUNGEON_CAUTIOUS_ENEMY"   : "【浮遊大陸】警戒モード",
+
     "EMPLOYEES_SORT_BY"                     : "ソート",
     "EMPLOYEES_SORT_BY_HIGHEST_RARITY"      : "レア度が高い順",
     "EMPLOYEES_SORT_BY_LOWEST_RARITY"       : "レア度が低い順",
