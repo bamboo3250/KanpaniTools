@@ -253,8 +253,26 @@
 .schedule-item-goingon {
     background-color: #aa0;
 }
-.dungeon-item {
+#dungeon-item {
+    position: relative;
+    background-color: #424242;
+}
+#dungeon-text {
+    position: relative;
+    z-index: 1;
+}
+#dungeon-cur {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 3px;
+}
+.dungeon-warning {
     background-color: #a00;
+}
+.dungeon-safe {
+    background-color: #189292;
 }
 
 .news-image {
