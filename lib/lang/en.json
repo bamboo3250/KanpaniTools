@@ -128,6 +128,13 @@
     "EMPLOYEES_SKILL_BUFF_TYPE_対★5"        : "vs. 5★",
     "EMPLOYEES_SKILL_BUFF_TYPE_対ローズ"      : "vs. Rose",
 
+    "EMPLOYEES_SKILL_BUFF_TYPE_対灰岩"      : "vs. Mountain Bombrock",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対雪人主"    : "vs. Mountain Bigfoot",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対緑岩"      : "vs. Forest Bombrock",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対鬼主森"    : "vs. Forest Goblin",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対赤岩"      : "vs. Island Bombrock",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対亀主島"    : "vs. Island Turtle",
+
     "EMPLOYEES_POLICY_NAME_1"           : "Go for the Leader!",
     "EMPLOYEES_POLICY_DESC_1"           : "Target random enemies after defeating the leader.",
     "EMPLOYEES_POLICY_NAME_2"           : "Go for the Peppy!",

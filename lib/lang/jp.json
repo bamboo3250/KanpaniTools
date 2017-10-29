@@ -128,6 +128,13 @@
     "EMPLOYEES_SKILL_BUFF_TYPE_対★5"        : "対★5",
     "EMPLOYEES_SKILL_BUFF_TYPE_対ローズ"      : "対ローズ",
 
+    "EMPLOYEES_SKILL_BUFF_TYPE_対灰岩"      : "対灰岩",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対雪人主"    : "対雪人主",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対緑岩"      : "対緑岩",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対鬼主森"    : "対鬼主(森)",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対赤岩"      : "対赤岩",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対亀主島"    : "対亀主(島)",
+
     "EMPLOYEES_POLICY_NAME_1"           : "リーダーをねらえ！",
     "EMPLOYEES_POLICY_DESC_1"           : "リーダー撃破後はランダムで敵を狙う。",
     "EMPLOYEES_POLICY_NAME_2"           : "元気なヤツをねらえ！",
