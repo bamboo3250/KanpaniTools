@@ -79,56 +79,32 @@
     });
 
     $('#news-tab-btn').click(function() {
-      $('.tab-btn').removeClass('tab-active-btn');
-      $(this).addClass('tab-active-btn');
-
-      $('.tab-content-panel').hide();
-      $('#news-tab-panel').show();
+      KTUIManager.navigateToPage(KTConst.pages.NEWS);
       GA.click('Show News tab');
     });
 
     $('#quest-log-tab-btn').click(function() {
-      $('.tab-btn').removeClass('tab-active-btn');
-      $(this).addClass('tab-active-btn');
-
-      $('.tab-content-panel').hide();
-      $('#quest-log-tab-panel').show();
+      KTUIManager.navigateToPage(KTConst.pages.DIALOGUES);
       GA.click('Show Quest Log tab');
     });
 
     $('#employees-tab-btn').click(function() {
-      $('.tab-btn').removeClass('tab-active-btn');
-      $(this).addClass('tab-active-btn');
-
-      $('.tab-content-panel').hide();
-      $('#employees-tab-panel').show();
+      KTUIManager.navigateToPage(KTConst.pages.EMPLOYEES);
       GA.click('Show Employees tab');
     });
 
     $('#teams-tab-btn').click(function() {
-      $('.tab-btn').removeClass('tab-active-btn');
-      $(this).addClass('tab-active-btn');
-
-      $('.tab-content-panel').hide();
-      $('#teams-tab-panel').show();
+      KTUIManager.navigateToPage(KTConst.pages.TEAMS);
       GA.click('Show Teams tab');
     });
 
     $('#battle-tab-btn').click(function() {
-      $('.tab-btn').removeClass('tab-active-btn');
-      $(this).addClass('tab-active-btn');
-
-      $('.tab-content-panel').hide();
-      $('#battle-tab-panel').show();
+      KTUIManager.navigateToPage(KTConst.pages.BATTLE);
       GA.click('Show Battle tab');
     });
 
     $('#settings-tab-btn').click(function() {
-      $('.tab-btn').removeClass('tab-active-btn');
-      $(this).addClass('tab-active-btn');
-
-      $('.tab-content-panel').hide();
-      $('#settings-tab-panel').show();
+      KTUIManager.navigateToPage(KTConst.pages.SETTINGS);
       GA.click('Show Settings tab');
     });
 
