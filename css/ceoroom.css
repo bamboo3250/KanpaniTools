@@ -88,6 +88,7 @@ img {
 #main-tab-content-catalog table td {
     width: 120px;
     padding: 5px;
+    vertical-align: top;
 }
 
 .gray-image {
