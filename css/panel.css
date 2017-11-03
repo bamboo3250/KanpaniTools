@@ -275,14 +275,6 @@
     background-color: #189292;
 }
 
-.news-image {
-    width: 20px;
-}
-
-.news-image:hover {
-    width: 40px;
-}
-
 .player-41-50 {
     color: #0aa;
 }
@@ -303,7 +295,21 @@
     color: #e00;
 }
 
+.news-row {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #666;
+}
 
+.news-row-content {
+    font-size: 13px;
+}
+
+.news-row-image-container {
+    width: 44px;
+    padding: 2px 0px;
+    text-align: center;
+}
 
 /* ================================= DIALOGUES TAB ================================= */
 
