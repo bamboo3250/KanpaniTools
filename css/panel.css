@@ -223,6 +223,7 @@
 }
 
 #dungeon-content,
+#dungeon-report-content,
 #schedule-content,
 #player-news-content {
     float: left;
@@ -235,6 +236,7 @@
 }
 
 #dungeon-content,
+#dungeon-report-content,
 #schedule-content {
     width: 100%;
 }
@@ -252,6 +254,9 @@
 
 .schedule-item-goingon {
     background-color: #aa0;
+}
+.dungeon-report-item {
+    background-color: #424242;
 }
 #dungeon-item {
     position: relative;

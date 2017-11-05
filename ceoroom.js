@@ -33,10 +33,8 @@
   function initCatalog() {
     var characterDict = KTGameDataManager.charaLibrary;
     var getCount = 0;
-    var userId = null;
-    if (KTPlayerManager.player) {
-      userId = KTPlayerManager.player.status.user_id;
-    }
+    var player = KTPlayerManager.getPlayer();
+    if (!player) return;
 
     for(var charaId in characterDict) {
       var id = charaId;
@@ -46,11 +44,11 @@
       
       var imageClass = '';
       var hasVS = false;
-      if (!userId || (typeof KTPlayerManager.card_book[userId] == 'undefined')  || (typeof KTPlayerManager.card_book[userId][id] == 'undefined')) {
+      if (typeof player.cardBook[id] == 'undefined') {
         imageClass = 'class="gray-image"';
       } else {
         getCount++;
-        hasVS = hasVoiceStone(KTPlayerManager.card_book[userId][id]);
+        hasVS = hasVoiceStone(player.cardBook[id]);
       }
         
       var image = '<div class="catalogs-character"><img ' + imageClass + ' src="http://67.205.150.236/storage/thumbnail/' + id + '.png" title="' + name + '"><img class="catalogs-vs" src="./assets/voice_stone.png" ' + (hasVS?'':'hidden') + '></div>';
@@ -187,7 +185,10 @@
     $('#employees-by-rarity-4').empty();
     $('#employees-by-rarity-5').empty();
 
-    var cards = KTPlayerManager.getCardList();
+    var player = KTPlayerManager.getPlayer();
+    if (!player) return;
+
+    var cards = player.getCardList();
     //console.log(cards);
     var filteredCards = [];
     for(var i=0;i<cards.length;i++) {
@@ -254,7 +255,10 @@
     $('#employees-by-class-7').empty();
     $('#employees-by-class-8').empty();
 
-    var cards = KTPlayerManager.getCardList();
+    var player = KTPlayerManager.getPlayer();
+    if (!player) return;
+    
+    var cards = player.getCardList();
     cards.sort(idSort);
 
     var filteredCards = [];

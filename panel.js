@@ -278,10 +278,10 @@
           $('#login-error').text(response.data);  
         } else {
 
-          var playerId = window.KTPlayerManager.getPlayerId();
-          if (playerId) {
-            window.KTPlayerManager.k_token[playerId] = response.data.k_token;
-            window.KTPlayerManager.k_username[playerId] = response.data.username;
+          var player = window.KTPlayerManager.getPlayer();
+          if (player) {
+            player.kToken = response.data.k_token;
+            player.kUsername = response.data.username;
             window.KTPlayerManager.saveToLocalStorage();
           }
           

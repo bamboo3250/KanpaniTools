@@ -201,36 +201,45 @@ img {
 }
 
 /* ================================= SKILLS ================================= */
-.skills-table th, .skills-table td {
+.kt-table th, 
+.kt-table td {
     border: 1px solid #666;
     padding: 5px;
 }
 
-table.skills-table {
+table.kt-table {
     border: 1px solid white;
     margin-left: 5px;
 }
 
-.skills-table-title {
+.kt-table-title {
     font-size: 16px;
     font-weight: bold;
     margin-left: 5px;
 }
 
-.skills-table-group-title {
+.kt-table-group-title {
     position: relative;
     top: -5px;
     font-size: 24px;
     font-weight: bold;
 }
 
-table.skills-table tr:nth-child(even) {
+table.kt-table tr:nth-child(even) {
     background-color: #000;
 }
-table.skills-table tr:nth-child(odd) {
+table.kt-table tr:nth-child(odd) {
     background-color: #111;
 }
-table.skills-table th {
+table.kt-table th {
     background-color: #ccc;
     color: #111;
 }
+
+/* ============================ LOGS =============================== */
+.kt-btn {
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
