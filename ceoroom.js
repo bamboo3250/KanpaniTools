@@ -354,6 +354,53 @@
     $('#main-tab-btn-skills').append(' (' + total + ')')
   }
 
+  function initGameLogs() {
+    var player = KTPlayerManager.getPlayer();
+    if (!player) {
+      $('#draw-logs-table tbody').html('<tr><td colspan="8">No available log</td></tr>');
+      return;
+    }
+
+    var gameLogs = KTGameLogManager.getDrawLogs();
+    if (!gameLogs || gameLogs.length < 1) {
+      $('#draw-logs-table tbody').html('<tr><td colspan="8">No available log</td></tr>');
+      return;
+    }
+
+    $('#draw-logs-table tbody').empty();
+    for(var i=0;i<gameLogs.length;i++) {
+      var gameLog = gameLogs[i];
+      console.log(gameLog);
+
+      var rowText = '<tr>';
+      rowText += '<td>' + gameLog.type + '</td>';         // Type
+      rowText += '<td>' + gameLog.data.params + '</td>';  // Item
+
+      var resultText = '';
+      for(var j=0;j<gameLog.data.cards.length;j++) {
+        var cardId = gameLog.data.cards[j];
+        resultText += '<img src="' + Kanpani.HOST + '/storage/thumbnail/' + cardId + '.png">';
+      }
+      rowText += '<td>' + resultText + '</td>';   // Result
+
+      var effectsText = '';
+      for(var j=0;j<gameLog.data.effects.length;j++) {
+        var effect = gameLog.data.effects[j];
+        if (effect.image_name && effect.image_name.length > 0) {
+          effectsText += '<img src="' + Kanpani.HOST + '/storage/item_effect/' + effect.image_name + '.png">';
+        }
+      }
+      rowText += '<td>' + effectsText + '</td>'; // Item Effect(s)
+      rowText += '<td>' + (gameLog.data.PRLevel ? gameLog.data.PRLevel : 'N.A') + '</td>';                     // PR Level
+      rowText += '<td>' + (gameLog.data.PRDescription ? gameLog.data.PRDescription.word : 'N.A') + '</td>';  // PR Ads
+      rowText += '<td>' + gameLog.data.cardsInPR + '</td>'; // PR Staffs
+      rowText += '<td>' + (gameLog.timestamp?gameLog.timestamp:'N.A') + '</td>';     // Timestamp
+      rowText += '</tr>';
+
+      $('#draw-logs-table tbody').append(rowText);
+    }
+  }
+
   $(document).ready(function() {
     GA.pageView();
 
@@ -382,7 +429,16 @@
         $('#main-tab-content-skills').show();
         GA.click('Open Skills');
       
+      } else if (id == 'main-tab-btn-game-logs') {
+        $('#main-tab-content-game-logs').show();
+        GA.click('Open Game Logs');
+      
       }
+    });
+
+    $('#clear-logs-btn').click(function() {
+      KTGameLogManager.clearGameLogs();
+      initGameLogs();
     });
 
     Kanpani.init(false, function() {
@@ -390,6 +446,7 @@
         initEmployeesByRarity();
         initEmployeesByClass();
         initSkills();
+        initGameLogs();
     });
     
   });

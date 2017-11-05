@@ -10,9 +10,10 @@
     <div id="ceo-room-title">CEO Room</div>
     <div id="main-tab-buttons-container">
         <div class="main-tab-btn-group-title">Game Data</div>
-        <div class="main-tab-btn active-main-tab-btn" id="main-tab-btn-employees-by-rarity">Employees by Rarity</div>
+        <div class="main-tab-btn" id="main-tab-btn-employees-by-rarity">Employees by Rarity</div>
         <div class="main-tab-btn" id="main-tab-btn-employees-by-class">Employees by Class</div>
         <div class="main-tab-btn" id="main-tab-btn-catalog">Catalogs</div>
+        <div class="main-tab-btn active-main-tab-btn" id="main-tab-btn-game-logs">Game Logs</div>
         <div class="main-tab-btn-group-title">Library</div>
         <div class="main-tab-btn" id="main-tab-btn-skills">Skills</div>
     </div>
@@ -91,7 +92,7 @@
             <span><b>Note</b>: Remember to check your in-game Catalogs frequently to update the list here!</span>
         </div>
 
-        <div class="main-tab-content" id="main-tab-content-employees-by-rarity">
+        <div class="main-tab-content" id="main-tab-content-employees-by-rarity" hidden>
             <div class="employees-filter">
                 <input id="employees-by-rarity-class-all" type="checkbox" checked>All
                 <input class="employees-by-rarity-filter employees-by-rarity-class" id="employees-by-rarity-class-1" type="checkbox" checked><img src="./assets/101.jpg">
@@ -406,6 +407,28 @@
                 <tbody></tbody>
             </table>
             
+        </div>
+
+        <div class="main-tab-content" id="main-tab-content-game-logs">
+            <table id="draw-logs-table" class="kt-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Item</th>
+                        <th>Result</th>
+                        <th>Item Effect(s)</th>
+                        <th>PR Level</th>
+                        <th>PR Ads</th>
+                        <th>PR Staffs</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="8">No available log</td></tr>
+                </tbody>
+            </table>
+            <br/>
+            <button id="clear-logs-btn" class="kt-btn">Clear Logs</button>
         </div>
     </div>
 
