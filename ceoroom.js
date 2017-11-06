@@ -393,7 +393,14 @@
       rowText += '<td>' + effectsText + '</td>'; // Item Effect(s)
       rowText += '<td>' + (gameLog.data.PRLevel ? gameLog.data.PRLevel : 'N.A') + '</td>';                     // PR Level
       rowText += '<td>' + (gameLog.data.PRDescription ? gameLog.data.PRDescription.word : 'N.A') + '</td>';  // PR Ads
-      rowText += '<td>' + gameLog.data.cardsInPR + '</td>'; // PR Staffs
+      
+
+      resultText = '';
+      for(var j=0;j<gameLog.data.cardsInPR.length;j++) {
+        var cardId = gameLog.data.cardsInPR[j].img_dir;
+        resultText += '<img src="' + Kanpani.HOST + '/storage/thumbnail/' + cardId + '.png">';
+      }
+      rowText += '<td>' + resultText + '</td>'; // PR Staffs
       rowText += '<td>' + (gameLog.timestamp?gameLog.timestamp:'N.A') + '</td>';     // Timestamp
       rowText += '</tr>';
 
