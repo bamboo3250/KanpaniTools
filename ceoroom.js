@@ -354,6 +354,14 @@
     $('#main-tab-btn-skills').append(' (' + total + ')')
   }
 
+  function loadSmallItemIcon(imageId) {
+    KTUIManager.fetchSmallItemThumbnail(imageId, function(url) {
+      $('.item-image-' + imageId).attr('src', url);
+    });
+
+    return '<img class="item-image-' + imageId + '" />';
+  }
+
   function initGameLogs() {
     var player = KTPlayerManager.getPlayer();
     if (!player) {
@@ -374,9 +382,21 @@
 
       var rowText = '<tr>';
       rowText += '<td>' + gameLog.type + '</td>';         // Type
-      rowText += '<td>' + gameLog.data.params + '</td>';  // Item
 
       var resultText = '';
+      for(var j=0;j<gameLog.data.params.length;j++) {
+        var param = gameLog.data.params[j];
+        if (typeof param == 'object' && typeof param['image_id'] != 'undefined') {
+          var imageId = param['image_id'];
+
+          var imgTag = loadSmallItemIcon(imageId);
+          resultText += imgTag;
+        }
+      }
+
+      rowText += '<td>' + resultText + '</td>';  // Item
+
+      resultText = '';
       for(var j=0;j<gameLog.data.cards.length;j++) {
         var cardId = gameLog.data.cards[j];
         resultText += '<img src="' + Kanpani.HOST + '/storage/thumbnail/' + cardId + '.png">';
