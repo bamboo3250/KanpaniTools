@@ -456,9 +456,9 @@
         $('#main-tab-content-skills').show();
         GA.click('Open Skills');
       
-      } else if (id == 'main-tab-btn-game-logs') {
-        $('#main-tab-content-game-logs').show();
-        GA.click('Open Game Logs');
+      } else if (id == 'main-tab-btn-gacha-logs') {
+        $('#main-tab-content-gacha-logs').show();
+        GA.click('Open Gacha Logs');
       
       }
     });
