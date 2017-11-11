@@ -253,6 +253,7 @@
 
     $('#clear-storage-btn').click(function() {
       chrome.storage.local.clear(function() {
+        console.log('All cleared');
         chrome.storage.local.get(null, function(items) {
             console.log(items);
         });

@@ -27,6 +27,33 @@
     "NEWS_NEWSEST_BOTTOM"               : "Newest Bottom",
 
     "SCHEDULE_DUNGEON_CAUTIOUS_ENEMY"   : "[Floating Continent] Caution Mode",
+    "DUNGEON_AREA_アトロナの森"             : "アトロナの森",
+    "DUNGEON_AREA_ユディシナ群島"           : "ユディシナ群島",
+    "DUNGEON_AREA_フルエリナ雪原"           : "フルエリナ雪原",
+
+    "DUNGEON_BONUS_宝箱発見率UP"         : "宝箱発見率UP",
+    "DUNGEON_BONUS_宝箱内容グレードUP"      : "宝箱内容グレードUP",
+    "DUNGEON_BONUS_宝箱ドロップ率UP"        : "宝箱ドロップ率UP",
+    "DUNGEON_BONUS_ミニバトル遭遇率UP"       : "ミニバトル遭遇率UP",
+    "DUNGEON_BONUS_モンスターバトル遭遇率UP"   : "モンスターバトル遭遇率UP",
+    "DUNGEON_BONUS_《イエティ》遭遇率UP"       : "《イエティ》遭遇率UP",
+    "DUNGEON_BONUS_《ゴブリンズ》遭遇率UP"      : "《ゴブリンズ》遭遇率UP",
+    "DUNGEON_BONUS_《ピーヨ》遭遇率UP"        : "《ピーヨ》遭遇率UP",
+    "DUNGEON_BONUS_《森の知恵者》遭遇率UP"    : "《森の知恵者》遭遇率UP",
+    "DUNGEON_BONUS_《オーシャンシェル》遭遇率UP"  : "《オーシャンシェル》遭遇率UP",
+    "DUNGEON_BONUS_《アルブサウルス》遭遇率UP"   : "《アルブサウルス》遭遇率UP",
+    "DUNGEON_BONUS_《シーフェアリー》遭遇率UP"   : "《シーフェアリー》遭遇率UP",
+    
+    "DUNGEON_BOSS_《シルフィード》"            : "《シルフィード》",
+    "DUNGEON_BOSS_《ゴブリンロード》"           : "《ゴブリンロード》",
+    "DUNGEON_BOSS_《グーワ》"                : "《グーワ》",
+    "DUNGEON_BOSS_《シアングレイター》"          : "《シアングレイター》",
+    "DUNGEON_BOSS_《ギガントイエティ》"          : "《ギガントイエティ》",
+    "DUNGEON_BOSS_《グラシェサウルス》"          : "《グラシェサウルス》",
+    "DUNGEON_BOSS_《森のミネルバ》"            : "《森のミネルバ》",
+    
+    "DUNGEON_REPORT_BONUS_MESSAGE"      : "現在<span style=\"color:{area_color}\">{area}</span>で<span style=\"color:{bonus_color}\">{bonus}</span>発生中！",
+    "DUNGEON_REPORT_DEFEAT_MESSAGE"     : "<span style=\"color:{company_color}\">{company}</span>が<span style=\"color:{area_color}\">{area}</span>の<span style=\"color:{boss_color}\">{boss}</span>を討伐！",
 
     "EMPLOYEES_SORT_BY"                     : "Sort by",
     "EMPLOYEES_SORT_BY_HIGHEST_RARITY"      : "Highest Rarity",
