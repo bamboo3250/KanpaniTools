@@ -52,8 +52,8 @@
     "DUNGEON_BOSS_《グラシェサウルス》"          : "《グラシェサウルス》",
     "DUNGEON_BOSS_《森のミネルバ》"            : "《森のミネルバ》",
     
-    "DUNGEON_REPORT_BONUS_MESSAGE"      : "現在<span style=\"color:{area_color}\">{area}</span>で<span style=\"color:{bonus_color}\">{bonus}</span>発生中！",
-    "DUNGEON_REPORT_DEFEAT_MESSAGE"     : "<span style=\"color:{company_color}\">{company}</span>が<span style=\"color:{area_color}\">{area}</span>の<span style=\"color:{boss_color}\">{boss}</span>を討伐！",
+    "DUNGEON_REPORT_BONUS_MESSAGE"      : "現在 <span style=\"color:{area_color}\">{area}</span> で <span style=\"color:{bonus_color}\">{bonus}</span> 発生中！",
+    "DUNGEON_REPORT_DEFEAT_MESSAGE"     : "<span style=\"color:{company_color}\">{company}</span> が <span style=\"color:{area_color}\">{area}</span> の <span style=\"color:{boss_color}\">{boss}</span> を討伐！",
 
     "EMPLOYEES_SORT_BY"                     : "Sort by",
     "EMPLOYEES_SORT_BY_HIGHEST_RARITY"      : "Highest Rarity",
