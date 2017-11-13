@@ -154,7 +154,9 @@
     "EMPLOYEES_SKILL_BUFF_TYPE_対エルミナ"     : "対エルミナ",
     "EMPLOYEES_SKILL_BUFF_TYPE_対★5"        : "対★5",
     "EMPLOYEES_SKILL_BUFF_TYPE_対ローズ"      : "対ローズ",
-
+    "EMPLOYEES_SKILL_BUFF_TYPE_対ホリー"      : "対ホリー",
+    "EMPLOYEES_SKILL_BUFF_TYPE_対魔法学校"   : "対魔法学校",
+    
     "EMPLOYEES_SKILL_BUFF_TYPE_対灰岩"      : "対灰岩",
     "EMPLOYEES_SKILL_BUFF_TYPE_対雪人主"    : "対雪人主",
     "EMPLOYEES_SKILL_BUFF_TYPE_対緑岩"      : "対緑岩",
