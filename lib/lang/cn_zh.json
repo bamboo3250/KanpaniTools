@@ -62,6 +62,7 @@
     "EMPLOYEES_SORT_BY_LOWEST_LEVEL"        : "等级由低到高",
     "EMPLOYEES_SORT_BY_ASSIGNMENT"          : "组队顺序",
     "EMPLOYEES_SORT_BY_CLASS"               : "职业",
+    "EMPLOYEES_SORT_BY_TENURE"              : "加入",
     "EMPLOYEES_SORT_BY_NAME"                : "姓名",
     "EMPLOYEES_SORT_BY_NORMAL_STRATEGY"     : "普通作战",
     "EMPLOYEES_SORT_BY_RAID_STRATEGY"       : "异世界作战",
