@@ -1,7 +1,7 @@
 #container {
     position: relative;
     height: 100%;
-    width: 360px;
+    width: 380px;
     background-image: url("../assets/background.jpg");
     background-color: #c5a78f;
     background-repeat: no-repeat;
@@ -559,7 +559,7 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
-    width: 100px;
+    width: 120px;
     height: 12px;
     background-color: #555;
 }
@@ -586,7 +586,7 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
-    width: 100px;
+    width: 120px;
     height: 12px;
     background-color: #555;
     font-size: 10px;
@@ -686,11 +686,14 @@
     font-size: 14px;
 }
 
+.expander-stats-table,
 .bonus-resist-table {
     border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;    
     width: 95%;
     margin: 5px auto;
+}
+.bonus-resist-table {
+    border-bottom: 1px solid #eee;
 }
 .bonus-table,
 .resist-table {
@@ -712,6 +715,24 @@
 }
 .see-more-url:hover {
     font-weight: bold;
+}
+
+.item-expander-option {
+    padding: 2px;
+}
+.item-expander-option-used {
+    cursor: pointer;
+}
+.item-expander-option-selected {
+    background-color: #e4974a;
+    color: #eee;
+    border-radius: 3px;
+}
+.item-expander-content-container {
+    border-top: 1px solid #eee;
+}
+.expander-stats {
+    color: #e4974a;
 }
 
 /* ================================= TEAM TAB ================================= */
