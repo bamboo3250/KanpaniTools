@@ -541,7 +541,8 @@
     bottom: -4px;
     right: 0px;
     font-size: 14px;
-    width: 110px;
+    width: 130px;
+    text-align: right;
     /* Required for text-overflow to do anything */
     white-space: nowrap;
     overflow: hidden;
