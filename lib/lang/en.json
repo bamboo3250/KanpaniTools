@@ -67,6 +67,7 @@
     "EMPLOYEES_SORT_BY_NORMAL_STRATEGY"     : "Normal Strategy",
     "EMPLOYEES_SORT_BY_RAID_STRATEGY"       : "Raid Strategy",
     "EMPLOYEES_SORT_BY_HEIGHT"              : "Height",
+    "EMPLOYEES_CLEAR"                       : "Clear",
     "EMPLOYEES_EXPAND_ALL"                  : "Expand All",
     "EMPLOYEES_COLLAPSE_ALL"                : "Collapse All",
     "EMPLOYEES_FILTER_ALL"                  : "All",

@@ -147,6 +147,12 @@
       KTUIManager.updateEmployeeList();
     });    
 
+    $('#clear-btn').click(function() {
+      KTPlayerManager.setCardList([]);
+      KTUIManager.updateEmployeeList([]);
+      GA.click('Clear Employee List');
+    });
+
     $('#expand-btn').click(function() {
       $('.employee-details').show();
       $('.equipment-details').hide();
